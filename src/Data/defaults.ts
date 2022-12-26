@@ -67,12 +67,12 @@ export const d_ongoingGame = {
 }
 
 export const d_customTenseGroups = [
-  { title: "facile", data: ["présent", "passé"] },
-  { title: "trop dure", data: ["plus-que-parfait", "futur antérieur"] }
+  { title: "facile", data: ["present", "passeSimple"] },
+{ title: "trop dure", data: ["plusQueParfait", "futurAnterieur"] }
 ]
 
 export const d_presetTenseGroups = [
-  { title: "subjonctif", data: ["subjonctif présent", "subjonctif passé", "subjonctif imparfait"] },
+  { title: "subjonctif", data: ["subjonctifPresent", "subjonctifPasse", "subjonctifImparfait"] },
   { title: "Indicatif", data: ["Indicatif imparfait", "Indicatif plus-que-parfait", "Indicatif futur antérieur"] },
   { title: "Conditionnel", data: ["Conditionnel présent", "Conditionnel passé"] },
 ]

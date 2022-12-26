@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Button, Container, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import { useRecoilValue, useRecoilState } from 'recoil';
+import { useRecoilValue, useRecoilState, useResetRecoilState } from 'recoil';
 import { currentTensesState, currentVerbsState, conjugationTables, ongoingGameState, tensesState, timerState } from './../../../Data/State';
 import { shuffle, randElement } from './../../../utils';
 import { d_pronouns } from '../../../Data/defaults'
@@ -19,11 +19,14 @@ const Race = () => {
   const tenses = useRecoilValue(tensesState)
   const currentTenses = useRecoilValue(currentTensesState)
   const [ongoingGameInfo, setOngoingGameInfo] = useRecoilState(ongoingGameState)
+  const resetOngoingGameInfo = useResetRecoilState(ongoingGameState)
+  
   const [data, setData] = useState<RaceGameInfo[]>([])
   const navigate = useNavigate()
   const [progress, setProgress] = useRecoilState(timerState)
 
   useEffect(() => {
+    resetOngoingGameInfo()
     if (currentVerbs.length > 0 && currentTenses.length > 0) {
 
       const verbTables = tables.filter(table => currentVerbs.includes(table.infinitif))
