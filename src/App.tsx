@@ -1,25 +1,24 @@
+import { Container } from '@mui/material';
 import React from 'react';
-import logo from './logo.svg';
+import { Outlet, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import { router } from './Routes';
+import { StyledContainer, StyledPaper, MainContainer } from './Styled';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <Navbar />
+      <StyledContainer maxWidth="xl">
+        <StyledPaper sx={{
+          background: '#6e8898', padding: '15px'
+        }}>
+          <Outlet />
+        </StyledPaper>
+      </StyledContainer>
+    </MainContainer>
   );
 }
 
