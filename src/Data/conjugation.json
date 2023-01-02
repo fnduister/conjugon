@@ -3141,7 +3141,7 @@
     "infinitif": "aller",
     "participePasse": "allé",
     "participePresent": "allant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "vais",
       "vas",
@@ -4141,7 +4141,7 @@
     "infinitif": "apparaître",
     "participePasse": "apparu",
     "participePresent": "apparaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "s'apparaître",
     "present": [
       "apparais",
@@ -5570,7 +5570,7 @@
     "infinitif": "arriver",
     "participePasse": "arrivé",
     "participePresent": "arrivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "arrive",
       "arrives",
@@ -16097,7 +16097,7 @@
     "infinitif": "descendre",
     "participePasse": "descendu",
     "participePresent": "descendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se descendre",
     "present": [
       "descends",
@@ -16524,7 +16524,7 @@
     "infinitif": "devenir",
     "participePasse": "devenu",
     "participePresent": "devenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "deviens",
       "deviens",
@@ -23887,7 +23887,7 @@
     "infinitif": "entrer",
     "participePasse": "entré",
     "participePresent": "entrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "entre",
       "entres",
@@ -26171,7 +26171,7 @@
     "infinitif": "échoir",
     "participePasse": "échu",
     "participePresent": "échéant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "s'échoir",
     "present": [
       "",
@@ -28858,7 +28858,7 @@
     ]
   },
   {
-    "infinitif": "être",
+    "infinitif": "être",
     "participePasse": "été",
     "participePresent": "étant",
     "auxiliaire": "avoir",
@@ -37794,7 +37794,7 @@
     "infinitif": "monter",
     "participePasse": "monté",
     "participePresent": "montant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se monter",
     "present": [
       "monte",
@@ -38223,7 +38223,7 @@
     "infinitif": "mourir",
     "participePasse": "mort",
     "participePresent": "mourant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se mourir",
     "present": [
       "meurs",
@@ -38509,7 +38509,7 @@
     "infinitif": "naître",
     "participePasse": "né",
     "participePresent": "naissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "nais",
       "nais",
@@ -41062,7 +41062,7 @@
     "infinitif": "partir",
     "participePasse": "parti",
     "participePresent": "partant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "pars",
       "pars",
@@ -41204,7 +41204,7 @@
     "infinitif": "parvenir",
     "participePasse": "parvenu",
     "participePresent": "parvenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "parviens",
       "parviens",
@@ -41346,7 +41346,7 @@
     "infinitif": "passer",
     "participePasse": "passé",
     "participePresent": "passant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se passer",
     "present": [
       "passe",
@@ -53656,7 +53656,7 @@
     "infinitif": "renaître",
     "participePasse": "rené",
     "participePresent": "renaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "renais",
       "renais",
@@ -54369,7 +54369,7 @@
     "infinitif": "rentrer",
     "participePasse": "rentré",
     "participePresent": "rentrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se rentrer",
     "present": [
       "rentre",
@@ -54941,7 +54941,7 @@
     "infinitif": "reparaître",
     "participePasse": "reparu",
     "participePresent": "reparaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se reparaître",
     "present": [
       "reparais",
@@ -56637,7 +56637,7 @@
     "infinitif": "rester",
     "participePasse": "resté",
     "participePresent": "restant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "reste",
       "restes",
@@ -57208,7 +57208,7 @@
     "infinitif": "retomber",
     "participePasse": "retombé",
     "participePresent": "retombant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "retombe",
       "retombes",
@@ -57350,7 +57350,7 @@
     "infinitif": "retourner",
     "participePasse": "retourné",
     "participePresent": "retournant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se retourner",
     "present": [
       "retourne",
@@ -57922,7 +57922,7 @@
     "infinitif": "revenir",
     "participePasse": "revenu",
     "participePresent": "revenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "reviens",
       "reviens",
@@ -61352,7 +61352,7 @@
     "infinitif": "s'abandonner",
     "participePasse": "abandonné",
     "participePresent": "s'abandonnant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "abandonner",
     "present": [
       "m'abandonne",
@@ -61487,7 +61487,7 @@
     "infinitif": "s'abattre",
     "participePasse": "abattu",
     "participePresent": "s'abattant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "abattre",
     "present": [
       "m'abats",
@@ -61748,7 +61748,7 @@
     "infinitif": "s'accepter",
     "participePasse": "accepté",
     "participePresent": "s'acceptant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accepter",
     "present": [
       "m'accepte",
@@ -61883,7 +61883,7 @@
     "infinitif": "s'accompagner",
     "participePasse": "accompagné",
     "participePresent": "s'accompagnant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accompagner",
     "present": [
       "m'accompagne",
@@ -62018,7 +62018,7 @@
     "infinitif": "s'accomplir",
     "participePasse": "accompli",
     "participePresent": "s'accomplissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accomplir",
     "present": [
       "m'accomplis",
@@ -62153,7 +62153,7 @@
     "infinitif": "s'accorder",
     "participePasse": "accordé",
     "participePresent": "s'accordant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accorder",
     "present": [
       "m'accorde",
@@ -62288,7 +62288,7 @@
     "infinitif": "s'accrocher",
     "participePasse": "accroché",
     "participePresent": "s'accrochant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accrocher",
     "present": [
       "m'accroche",
@@ -62423,7 +62423,7 @@
     "infinitif": "s'accroître",
     "participePasse": "accru",
     "participePresent": "s'accroissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accroître",
     "present": [
       "m'accrois",
@@ -62558,7 +62558,7 @@
     "infinitif": "s'accueillir",
     "participePasse": "accueilli",
     "participePresent": "s'accueillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accueillir",
     "present": [
       "m'accueille",
@@ -62693,7 +62693,7 @@
     "infinitif": "s'accuser",
     "participePasse": "accusé",
     "participePresent": "s'accusant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "accuser",
     "present": [
       "m'accuse",
@@ -62828,7 +62828,7 @@
     "infinitif": "s'acheter",
     "participePasse": "acheté",
     "participePresent": "s'achetant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "acheter",
     "present": [
       "m'achète",
@@ -62963,7 +62963,7 @@
     "infinitif": "s'achever",
     "participePasse": "achevé",
     "participePresent": "s'achevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "achever",
     "present": [
       "m'achève",
@@ -63098,7 +63098,7 @@
     "infinitif": "s'acquérir",
     "participePasse": "acquis",
     "participePresent": "s'acquérant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "acquérir",
     "present": [
       "m'acquiers",
@@ -63233,7 +63233,7 @@
     "infinitif": "s'admettre",
     "participePasse": "admis",
     "participePresent": "s'admettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "admettre",
     "present": [
       "m'admets",
@@ -63368,7 +63368,7 @@
     "infinitif": "s'adresser",
     "participePasse": "adressé",
     "participePresent": "s'adressant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "adresser",
     "present": [
       "m'adresse",
@@ -63503,7 +63503,7 @@
     "infinitif": "s'affirmer",
     "participePasse": "affirmé",
     "participePresent": "s'affirmant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "affirmer",
     "present": [
       "m'affirme",
@@ -63638,7 +63638,7 @@
     "infinitif": "s'agir",
     "participePasse": "agi",
     "participePresent": "s'agissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "agir",
     "present": [
       "",
@@ -63765,7 +63765,7 @@
     "infinitif": "s'agiter",
     "participePasse": "agité",
     "participePresent": "s'agitant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "agiter",
     "present": [
       "m'agite",
@@ -63900,7 +63900,7 @@
     "infinitif": "s'aider",
     "participePasse": "aidé",
     "participePresent": "s'aidant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "aider",
     "present": [
       "m'aide",
@@ -64035,7 +64035,7 @@
     "infinitif": "s'aimer",
     "participePasse": "aimé",
     "participePresent": "s'aimant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "aimer",
     "present": [
       "m'aime",
@@ -64170,7 +64170,7 @@
     "infinitif": "s'ajouter",
     "participePasse": "ajouté",
     "participePresent": "s'ajoutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ajouter",
     "present": [
       "m'ajoute",
@@ -64305,7 +64305,7 @@
     "infinitif": "s'allumer",
     "participePasse": "allumé",
     "participePresent": "s'allumant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "allumer",
     "present": [
       "m'allume",
@@ -64440,7 +64440,7 @@
     "infinitif": "s'amener",
     "participePasse": "amené",
     "participePresent": "s'amenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "amener",
     "present": [
       "m'amène",
@@ -64575,7 +64575,7 @@
     "infinitif": "s'amuser",
     "participePasse": "amusé",
     "participePresent": "s'amusant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "amuser",
     "present": [
       "m'amuse",
@@ -64710,7 +64710,7 @@
     "infinitif": "s'animer",
     "participePasse": "animé",
     "participePresent": "s'animant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "animer",
     "present": [
       "m'anime",
@@ -64845,7 +64845,7 @@
     "infinitif": "s'annoncer",
     "participePasse": "annoncé",
     "participePresent": "s'annonçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "annoncer",
     "present": [
       "m'annonce",
@@ -64980,7 +64980,7 @@
     "infinitif": "s'apercevoir",
     "participePasse": "aperçu",
     "participePresent": "s'apercevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "apercevoir",
     "present": [
       "m'aperçois",
@@ -65115,7 +65115,7 @@
     "infinitif": "s'apparaître",
     "participePasse": "apparu",
     "participePresent": "s'apparaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "apparaître",
     "present": [
       "m'apparais",
@@ -65250,7 +65250,7 @@
     "infinitif": "s'appartenir",
     "participePasse": "appartenu",
     "participePresent": "s'appartenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "appartenir",
     "present": [
       "m'appartiens",
@@ -65385,7 +65385,7 @@
     "infinitif": "s'appeler",
     "participePasse": "appelé",
     "participePresent": "s'appelant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "appeler",
     "present": [
       "m'appelle",
@@ -65520,7 +65520,7 @@
     "infinitif": "s'apprendre",
     "participePasse": "appris",
     "participePresent": "s'apprenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "apprendre",
     "present": [
       "m'apprends",
@@ -65655,7 +65655,7 @@
     "infinitif": "s'approcher",
     "participePasse": "approché",
     "participePresent": "s'approchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "approcher",
     "present": [
       "m'approche",
@@ -65790,7 +65790,7 @@
     "infinitif": "s'appuyer",
     "participePasse": "appuyé",
     "participePresent": "s'appuyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "appuyer",
     "present": [
       "m'appuie",
@@ -65925,7 +65925,7 @@
     "infinitif": "s'armer",
     "participePasse": "armé",
     "participePresent": "s'armant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "armer",
     "present": [
       "m'arme",
@@ -66060,7 +66060,7 @@
     "infinitif": "s'arracher",
     "participePasse": "arraché",
     "participePresent": "s'arrachant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "arracher",
     "present": [
       "m'arrache",
@@ -66195,7 +66195,7 @@
     "infinitif": "s'arrêter",
     "participePasse": "arrêté",
     "participePresent": "s'arrêtant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "arrêter",
     "present": [
       "m'arrête",
@@ -66330,7 +66330,7 @@
     "infinitif": "s'assaillir",
     "participePasse": "assailli",
     "participePresent": "s'assaillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "assaillir",
     "present": [
       "m'assaille",
@@ -66465,7 +66465,7 @@
     "infinitif": "s'asseoir",
     "participePasse": "s'assoyant",
     "participePresent": "s'asseyant,",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "asseoir",
     "present": [
       "m'assieds, assois",
@@ -66600,7 +66600,7 @@
     "infinitif": "s'assister",
     "participePasse": "assisté",
     "participePresent": "s'assistant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "assister",
     "present": [
       "m'assiste",
@@ -66735,7 +66735,7 @@
     "infinitif": "s'assurer",
     "participePasse": "assuré",
     "participePresent": "s'assurant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "assurer",
     "present": [
       "m'assure",
@@ -66870,7 +66870,7 @@
     "infinitif": "s'attacher",
     "participePasse": "attaché",
     "participePresent": "s'attachant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "attacher",
     "present": [
       "m'attache",
@@ -67005,7 +67005,7 @@
     "infinitif": "s'attaquer",
     "participePasse": "attaqué",
     "participePresent": "s'attaquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "attaquer",
     "present": [
       "m'attaque",
@@ -67140,7 +67140,7 @@
     "infinitif": "s'attendre",
     "participePasse": "attendu",
     "participePresent": "s'attendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "attendre",
     "present": [
       "m'attends",
@@ -67275,7 +67275,7 @@
     "infinitif": "s'attirer",
     "participePasse": "attiré",
     "participePresent": "s'attirant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "attirer",
     "present": [
       "m'attire",
@@ -67410,7 +67410,7 @@
     "infinitif": "s'avancer",
     "participePasse": "avancé",
     "participePresent": "s'avançant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "avancer",
     "present": [
       "m'avance",
@@ -67545,7 +67545,7 @@
     "infinitif": "s'avouer",
     "participePasse": "avoué",
     "participePresent": "s'avouant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "avouer",
     "present": [
       "m'avoue",
@@ -67680,7 +67680,7 @@
     "infinitif": "s'effacer",
     "participePasse": "effacé",
     "participePresent": "s'effaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "effacer",
     "present": [
       "m'efface",
@@ -67815,7 +67815,7 @@
     "infinitif": "s'emboire",
     "participePasse": "embu",
     "participePresent": "s'embuvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "emboire",
     "present": [
       "m'embois",
@@ -67950,7 +67950,7 @@
     "infinitif": "s'empêcher",
     "participePasse": "empêché",
     "participePresent": "s'empêchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "empêcher",
     "present": [
       "m'empêche",
@@ -68085,7 +68085,7 @@
     "infinitif": "s'employer",
     "participePasse": "employé",
     "participePresent": "s'employant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "employer",
     "present": [
       "m'emploie",
@@ -68220,7 +68220,7 @@
     "infinitif": "s'emporter",
     "participePasse": "emporté",
     "participePresent": "s'emportant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "emporter",
     "present": [
       "m'emporte",
@@ -68355,7 +68355,7 @@
     "infinitif": "s'enclore",
     "participePasse": "enclos",
     "participePresent": "s'enclosant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "enclore",
     "present": [
       "m'enclos",
@@ -68474,7 +68474,7 @@
     "infinitif": "s'endormir",
     "participePasse": "endormi",
     "participePresent": "s'endormant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "endormir",
     "present": [
       "m'endors",
@@ -68609,7 +68609,7 @@
     "infinitif": "s'enfermer",
     "participePasse": "enfermé",
     "participePresent": "s'enfermant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "enfermer",
     "present": [
       "m'enferme",
@@ -68744,7 +68744,7 @@
     "infinitif": "s'enfoncer",
     "participePasse": "enfoncé",
     "participePresent": "s'enfonçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "enfoncer",
     "present": [
       "m'enfonce",
@@ -68879,7 +68879,7 @@
     "infinitif": "s'enfuir",
     "participePasse": "enfui",
     "participePresent": "s'enfuyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "m'enfuis",
       "t'enfuis",
@@ -69013,7 +69013,7 @@
     "infinitif": "s'engager",
     "participePasse": "engagé",
     "participePresent": "s'engageant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "engager",
     "present": [
       "m'engage",
@@ -69148,7 +69148,7 @@
     "infinitif": "s'ensuivre",
     "participePasse": "ensuivi",
     "participePresent": "s'ensuivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "",
       "",
@@ -69274,7 +69274,7 @@
     "infinitif": "s'entendre",
     "participePasse": "entendu",
     "participePresent": "s'entendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "entendre",
     "present": [
       "m'entends",
@@ -69409,7 +69409,7 @@
     "infinitif": "s'entourer",
     "participePasse": "entouré",
     "participePresent": "s'entourant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "entourer",
     "present": [
       "m'entoure",
@@ -69544,7 +69544,7 @@
     "infinitif": "s'entraîner",
     "participePasse": "entraîné",
     "participePresent": "s'entraînant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "entraîner",
     "present": [
       "m'entraîne",
@@ -69679,7 +69679,7 @@
     "infinitif": "s'entrebattre",
     "participePasse": "entrebattu",
     "participePresent": "s'entrebattant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "",
       "",
@@ -69813,7 +69813,7 @@
     "infinitif": "s'entretenir",
     "participePasse": "entretenu",
     "participePresent": "s'entretenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "entretenir",
     "present": [
       "m'entretiens",
@@ -69948,7 +69948,7 @@
     "infinitif": "s'envelopper",
     "participePasse": "enveloppé",
     "participePresent": "s'enveloppant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "envelopper",
     "present": [
       "m'enveloppe",
@@ -70083,7 +70083,7 @@
     "infinitif": "s'envoyer",
     "participePasse": "envoyé",
     "participePresent": "s'envoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "envoyer",
     "present": [
       "m'envoie",
@@ -70218,7 +70218,7 @@
     "infinitif": "s'espérer",
     "participePasse": "espéré",
     "participePresent": "s'espérant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "espérer",
     "present": [
       "m'espère",
@@ -70353,7 +70353,7 @@
     "infinitif": "s'essayer",
     "participePasse": "essayé",
     "participePresent": "s'essayant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "essayer",
     "present": [
       "m'essaie, essaye",
@@ -70488,7 +70488,7 @@
     "infinitif": "s'essuyer",
     "participePasse": "essuyé",
     "participePresent": "s'essuyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "essuyer",
     "present": [
       "m'essuie",
@@ -70623,7 +70623,7 @@
     "infinitif": "s'exécuter",
     "participePasse": "exécuté",
     "participePresent": "s'exécutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "exécuter",
     "present": [
       "m'exécute",
@@ -70758,7 +70758,7 @@
     "infinitif": "s'expliquer",
     "participePasse": "expliqué",
     "participePresent": "s'expliquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "expliquer",
     "present": [
       "m'explique",
@@ -70893,7 +70893,7 @@
     "infinitif": "s'exposer",
     "participePasse": "exposé",
     "participePresent": "s'exposant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "exposer",
     "present": [
       "m'expose",
@@ -71028,7 +71028,7 @@
     "infinitif": "s'exprimer",
     "participePasse": "exprimé",
     "participePresent": "s'exprimant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "exprimer",
     "present": [
       "m'exprime",
@@ -71163,7 +71163,7 @@
     "infinitif": "s'ébattre",
     "participePasse": "ébattu",
     "participePresent": "s'ébattant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "m'ébats",
       "t'ébats",
@@ -71297,7 +71297,7 @@
     "infinitif": "s'écarter",
     "participePasse": "écarté",
     "participePresent": "s'écartant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "écarter",
     "present": [
       "m'écarte",
@@ -71432,7 +71432,7 @@
     "infinitif": "s'échapper",
     "participePasse": "échappé",
     "participePresent": "s'échappant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "échapper",
     "present": [
       "m'échappe",
@@ -71567,7 +71567,7 @@
     "infinitif": "s'échoir",
     "participePasse": "échu",
     "participePresent": "s'échéant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "échoir",
     "present": [
       "",
@@ -71686,7 +71686,7 @@
     "infinitif": "s'éclairer",
     "participePasse": "éclairé",
     "participePresent": "s'éclairant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "éclairer",
     "present": [
       "m'éclaire",
@@ -71821,7 +71821,7 @@
     "infinitif": "s'éclater",
     "participePasse": "éclaté",
     "participePresent": "s'éclatant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "éclater",
     "present": [
       "m'éclate",
@@ -71956,7 +71956,7 @@
     "infinitif": "s'écouter",
     "participePasse": "écouté",
     "participePresent": "s'écoutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "écouter",
     "present": [
       "m'écoute",
@@ -72091,7 +72091,7 @@
     "infinitif": "s'écraser",
     "participePasse": "écrasé",
     "participePresent": "s'écrasant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "écraser",
     "present": [
       "m'écrase",
@@ -72226,7 +72226,7 @@
     "infinitif": "s'écrire",
     "participePasse": "écrit",
     "participePresent": "s'écrivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "écrire",
     "present": [
       "m'écris",
@@ -72361,7 +72361,7 @@
     "infinitif": "s'élever",
     "participePasse": "élevé",
     "participePresent": "s'élevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "élever",
     "present": [
       "m'élève",
@@ -72496,7 +72496,7 @@
     "infinitif": "s'éloigner",
     "participePasse": "éloigné",
     "participePresent": "s'éloignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "éloigner",
     "present": [
       "m'éloigne",
@@ -72631,7 +72631,7 @@
     "infinitif": "s'émoudre",
     "participePasse": "émoulu",
     "participePresent": "s'émoulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "émoudre",
     "present": [
       "m'émouds",
@@ -72766,7 +72766,7 @@
     "infinitif": "s'émouvoir",
     "participePasse": "ému",
     "participePresent": "s'émouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "émouvoir",
     "present": [
       "m'émeus",
@@ -72901,7 +72901,7 @@
     "infinitif": "s'établir",
     "participePasse": "établi",
     "participePresent": "s'établissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "établir",
     "present": [
       "m'établis",
@@ -73036,7 +73036,7 @@
     "infinitif": "s'étaler",
     "participePasse": "étalé",
     "participePresent": "s'étalant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "étaler",
     "present": [
       "m'étale",
@@ -73171,7 +73171,7 @@
     "infinitif": "s'éteindre",
     "participePasse": "éteint",
     "participePresent": "s'éteignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "éteindre",
     "present": [
       "m'éteins",
@@ -73306,7 +73306,7 @@
     "infinitif": "s'étendre",
     "participePasse": "étendu",
     "participePresent": "s'étendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "étendre",
     "present": [
       "m'étends",
@@ -73441,7 +73441,7 @@
     "infinitif": "s'étonner",
     "participePasse": "étonné",
     "participePresent": "s'étonnant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "étonner",
     "present": [
       "m'étonne",
@@ -73576,7 +73576,7 @@
     "infinitif": "s'étouffer",
     "participePasse": "étouffé",
     "participePresent": "s'étouffant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "étouffer",
     "present": [
       "m'étouffe",
@@ -73711,7 +73711,7 @@
     "infinitif": "s'habiller",
     "participePasse": "habillé",
     "participePresent": "s'habillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "habiller",
     "present": [
       "m'habille",
@@ -73846,7 +73846,7 @@
     "infinitif": "s'ignorer",
     "participePasse": "ignoré",
     "participePresent": "s'ignorant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ignorer",
     "present": [
       "m'ignore",
@@ -73981,7 +73981,7 @@
     "infinitif": "s'imaginer",
     "participePasse": "imaginé",
     "participePresent": "s'imaginant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "imaginer",
     "present": [
       "m'imagine",
@@ -74116,7 +74116,7 @@
     "infinitif": "s'imposer",
     "participePasse": "imposé",
     "participePresent": "s'imposant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "imposer",
     "present": [
       "m'impose",
@@ -74251,7 +74251,7 @@
     "infinitif": "s'inquiéter",
     "participePasse": "inquiété",
     "participePresent": "s'inquiétant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "inquiéter",
     "present": [
       "m'inquiète",
@@ -74386,7 +74386,7 @@
     "infinitif": "s'inspirer",
     "participePasse": "inspiré",
     "participePresent": "s'inspirant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "inspirer",
     "present": [
       "m'inspire",
@@ -74521,7 +74521,7 @@
     "infinitif": "s'installer",
     "participePasse": "installé",
     "participePresent": "s'installant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "installer",
     "present": [
       "m'installe",
@@ -74656,7 +74656,7 @@
     "infinitif": "s'interroger",
     "participePasse": "interrogé",
     "participePresent": "s'interrogeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "interroger",
     "present": [
       "m'interroge",
@@ -74791,7 +74791,7 @@
     "infinitif": "s'interrompre",
     "participePasse": "interrompu",
     "participePresent": "s'interrompant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "interrompre",
     "present": [
       "m'interromps",
@@ -74926,7 +74926,7 @@
     "infinitif": "s'intéresser",
     "participePasse": "intéressé",
     "participePresent": "s'intéressant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "intéresser",
     "present": [
       "m'intéresse",
@@ -75061,7 +75061,7 @@
     "infinitif": "s'inventer",
     "participePasse": "inventé",
     "participePresent": "s'inventant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "inventer",
     "present": [
       "m'invente",
@@ -75196,7 +75196,7 @@
     "infinitif": "s'inviter",
     "participePasse": "invité",
     "participePresent": "s'invitant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "inviter",
     "present": [
       "m'invite",
@@ -75331,7 +75331,7 @@
     "infinitif": "s'obliger",
     "participePasse": "obligé",
     "participePresent": "s'obligeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "obliger",
     "present": [
       "m'oblige",
@@ -75466,7 +75466,7 @@
     "infinitif": "s'observer",
     "participePasse": "observé",
     "participePresent": "s'observant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "observer",
     "present": [
       "m'observe",
@@ -75601,7 +75601,7 @@
     "infinitif": "s'obtenir",
     "participePasse": "obtenu",
     "participePresent": "s'obtenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "obtenir",
     "present": [
       "m'obtiens",
@@ -75736,7 +75736,7 @@
     "infinitif": "s'occlure",
     "participePasse": "occlus",
     "participePresent": "s'occluant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "occlure",
     "present": [
       "m'occlus",
@@ -75871,7 +75871,7 @@
     "infinitif": "s'occuper",
     "participePasse": "occupé",
     "participePresent": "s'occupant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "occuper",
     "present": [
       "m'occupe",
@@ -76006,7 +76006,7 @@
     "infinitif": "s'offrir",
     "participePasse": "offert",
     "participePresent": "s'offrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "offrir",
     "present": [
       "m'offre",
@@ -76141,7 +76141,7 @@
     "infinitif": "s'oublier",
     "participePasse": "oublié",
     "participePresent": "s'oubliant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "oublier",
     "present": [
       "m'oublie",
@@ -76276,7 +76276,7 @@
     "infinitif": "s'ouvrir",
     "participePasse": "ouvert",
     "participePresent": "s'ouvrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ouvrir",
     "present": [
       "m'ouvre",
@@ -76411,7 +76411,7 @@
     "infinitif": "s'user",
     "participePasse": "usé",
     "participePresent": "s'usant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "user",
     "present": [
       "m'use",
@@ -77546,7 +77546,7 @@
     "infinitif": "se baisser",
     "participePasse": "baissé",
     "participePresent": "se baissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "baisser",
     "present": [
       "me baisse",
@@ -77681,7 +77681,7 @@
     "infinitif": "se battre",
     "participePasse": "battu",
     "participePresent": "se battant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "battre",
     "present": [
       "me bats",
@@ -77816,7 +77816,7 @@
     "infinitif": "se boire",
     "participePasse": "bu",
     "participePresent": "se buvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "boire",
     "present": [
       "me bois",
@@ -77951,7 +77951,7 @@
     "infinitif": "se briser",
     "participePasse": "brisé",
     "participePresent": "se brisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "briser",
     "present": [
       "me brise",
@@ -78086,7 +78086,7 @@
     "infinitif": "se brûler",
     "participePasse": "brûlé",
     "participePresent": "se brûlant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "brûler",
     "present": [
       "me brûle",
@@ -78221,7 +78221,7 @@
     "infinitif": "se cacher",
     "participePasse": "caché",
     "participePresent": "se cachant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "cacher",
     "present": [
       "me cache",
@@ -78356,7 +78356,7 @@
     "infinitif": "se calmer",
     "participePasse": "calmé",
     "participePresent": "se calmant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "calmer",
     "present": [
       "me calme",
@@ -78491,7 +78491,7 @@
     "infinitif": "se caresser",
     "participePasse": "caressé",
     "participePresent": "se caressant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "caresser",
     "present": [
       "me caresse",
@@ -78626,7 +78626,7 @@
     "infinitif": "se casser",
     "participePasse": "cassé",
     "participePresent": "se cassant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "casser",
     "present": [
       "me casse",
@@ -78761,7 +78761,7 @@
     "infinitif": "se causer",
     "participePasse": "causé",
     "participePresent": "se causant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "causer",
     "present": [
       "me cause",
@@ -78896,7 +78896,7 @@
     "infinitif": "se céder",
     "participePasse": "cédé",
     "participePresent": "se cédant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "céder",
     "present": [
       "me cède",
@@ -79031,7 +79031,7 @@
     "infinitif": "se changer",
     "participePasse": "changé",
     "participePresent": "se changeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "changer",
     "present": [
       "me change",
@@ -79166,7 +79166,7 @@
     "infinitif": "se charger",
     "participePasse": "chargé",
     "participePresent": "se chargeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "charger",
     "present": [
       "me charge",
@@ -79301,7 +79301,7 @@
     "infinitif": "se chercher",
     "participePasse": "cherché",
     "participePresent": "se cherchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "chercher",
     "present": [
       "me cherche",
@@ -79436,7 +79436,7 @@
     "infinitif": "se choisir",
     "participePasse": "choisi",
     "participePresent": "se choisissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "choisir",
     "present": [
       "me choisis",
@@ -79571,7 +79571,7 @@
     "infinitif": "se clore",
     "participePasse": "clos",
     "participePresent": "se closant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "clore",
     "present": [
       "me clos",
@@ -79682,7 +79682,7 @@
     "infinitif": "se commencer",
     "participePasse": "commencé",
     "participePresent": "se commençant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "commencer",
     "present": [
       "me commence",
@@ -79817,7 +79817,7 @@
     "infinitif": "se comprendre",
     "participePasse": "compris",
     "participePresent": "se comprenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "comprendre",
     "present": [
       "me comprends",
@@ -79952,7 +79952,7 @@
     "infinitif": "se compter",
     "participePasse": "compté",
     "participePresent": "se comptant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "compter",
     "present": [
       "me compte",
@@ -80087,7 +80087,7 @@
     "infinitif": "se conclure",
     "participePasse": "conclu",
     "participePresent": "se concluant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "conclure",
     "present": [
       "me conclus",
@@ -80222,7 +80222,7 @@
     "infinitif": "se condamner",
     "participePasse": "condamné",
     "participePresent": "se condamnant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "condamner",
     "present": [
       "me condamne",
@@ -80357,7 +80357,7 @@
     "infinitif": "se conduire",
     "participePasse": "conduit",
     "participePresent": "se conduisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "conduire",
     "present": [
       "me conduis",
@@ -80492,7 +80492,7 @@
     "infinitif": "se confier",
     "participePasse": "confié",
     "participePresent": "se confiant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "confier",
     "present": [
       "me confie",
@@ -80627,7 +80627,7 @@
     "infinitif": "se confondre",
     "participePasse": "confondu",
     "participePresent": "se confondant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "confondre",
     "present": [
       "me confonds",
@@ -80762,7 +80762,7 @@
     "infinitif": "se connaître",
     "participePasse": "connu",
     "participePresent": "se connaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "connaître",
     "present": [
       "me connais",
@@ -80897,7 +80897,7 @@
     "infinitif": "se considérer",
     "participePasse": "considéré",
     "participePresent": "se considérant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "considérer",
     "present": [
       "me considère",
@@ -81032,7 +81032,7 @@
     "infinitif": "se construire",
     "participePasse": "construit",
     "participePresent": "se construisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "construire",
     "present": [
       "me construis",
@@ -81167,7 +81167,7 @@
     "infinitif": "se contenir",
     "participePasse": "contenu",
     "participePresent": "se contenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "contenir",
     "present": [
       "me contiens",
@@ -81302,7 +81302,7 @@
     "infinitif": "se contenter",
     "participePasse": "contenté",
     "participePresent": "se contentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "contenter",
     "present": [
       "me contente",
@@ -81437,7 +81437,7 @@
     "infinitif": "se contrefoutre",
     "participePasse": "contrefoutu",
     "participePresent": "se contrefoutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "contrefoutre",
     "present": [
       "me contrefous",
@@ -81572,7 +81572,7 @@
     "infinitif": "se convaincre",
     "participePasse": "convaincu",
     "participePresent": "se convainquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "convaincre",
     "present": [
       "me convaincs",
@@ -81707,7 +81707,7 @@
     "infinitif": "se convenir",
     "participePasse": "convenu",
     "participePresent": "se convenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "convenir",
     "present": [
       "me conviens",
@@ -81842,7 +81842,7 @@
     "infinitif": "se copier",
     "participePasse": "copié",
     "participePresent": "se copiant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "copier",
     "present": [
       "me copie",
@@ -81977,7 +81977,7 @@
     "infinitif": "se coucher",
     "participePasse": "couché",
     "participePresent": "se couchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "coucher",
     "present": [
       "me couche",
@@ -82112,7 +82112,7 @@
     "infinitif": "se coudre",
     "participePasse": "cousu",
     "participePresent": "se cousant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "coudre",
     "present": [
       "me couds",
@@ -82247,7 +82247,7 @@
     "infinitif": "se couler",
     "participePasse": "coulé",
     "participePresent": "se coulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "couler",
     "present": [
       "me coule",
@@ -82382,7 +82382,7 @@
     "infinitif": "se couper",
     "participePasse": "coupé",
     "participePresent": "se coupant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "couper",
     "present": [
       "me coupe",
@@ -82517,7 +82517,7 @@
     "infinitif": "se courir",
     "participePasse": "couru",
     "participePresent": "se courant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "courir",
     "present": [
       "me cours",
@@ -82652,7 +82652,7 @@
     "infinitif": "se couvrir",
     "participePasse": "couvert",
     "participePresent": "se couvrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "couvrir",
     "present": [
       "me couvre",
@@ -82787,7 +82787,7 @@
     "infinitif": "se craindre",
     "participePasse": "craint",
     "participePresent": "se craignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "craindre",
     "present": [
       "me crains",
@@ -82922,7 +82922,7 @@
     "infinitif": "se creuser",
     "participePasse": "creusé",
     "participePresent": "se creusant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "creuser",
     "present": [
       "me creuse",
@@ -83057,7 +83057,7 @@
     "infinitif": "se créer",
     "participePasse": "créé",
     "participePresent": "se créant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "créer",
     "present": [
       "me crée",
@@ -83192,7 +83192,7 @@
     "infinitif": "se croire",
     "participePasse": "cru",
     "participePresent": "se croyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "croire",
     "present": [
       "me crois",
@@ -83327,7 +83327,7 @@
     "infinitif": "se croiser",
     "participePasse": "croisé",
     "participePresent": "se croisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "croiser",
     "present": [
       "me croise",
@@ -83462,7 +83462,7 @@
     "infinitif": "se cueillir",
     "participePasse": "cueilli",
     "participePresent": "se cueillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "cueillir",
     "present": [
       "me cueille",
@@ -83597,7 +83597,7 @@
     "infinitif": "se demander",
     "participePasse": "demandé",
     "participePresent": "se demandant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "demander",
     "present": [
       "me demande",
@@ -83732,7 +83732,7 @@
     "infinitif": "se descendre",
     "participePasse": "descendu",
     "participePresent": "se descendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "descendre",
     "present": [
       "me descends",
@@ -84001,7 +84001,7 @@
     "infinitif": "se déchirer",
     "participePasse": "déchiré",
     "participePresent": "se déchirant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "déchirer",
     "present": [
       "me déchire",
@@ -84136,7 +84136,7 @@
     "infinitif": "se décider",
     "participePasse": "décidé",
     "participePresent": "se décidant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "décider",
     "present": [
       "me décide",
@@ -84271,7 +84271,7 @@
     "infinitif": "se déclarer",
     "participePasse": "déclaré",
     "participePresent": "se déclarant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "déclarer",
     "present": [
       "me déclare",
@@ -84406,7 +84406,7 @@
     "infinitif": "se découdre",
     "participePasse": "décousu",
     "participePresent": "se décousant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "découdre",
     "present": [
       "me découds",
@@ -84541,7 +84541,7 @@
     "infinitif": "se découvrir",
     "participePasse": "découvert",
     "participePresent": "se découvrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "découvrir",
     "present": [
       "me découvre",
@@ -84676,7 +84676,7 @@
     "infinitif": "se décrire",
     "participePasse": "décrit",
     "participePresent": "se décrivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "décrire",
     "present": [
       "me décris",
@@ -84811,7 +84811,7 @@
     "infinitif": "se défendre",
     "participePasse": "défendu",
     "participePresent": "se défendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "défendre",
     "present": [
       "me défends",
@@ -84946,7 +84946,7 @@
     "infinitif": "se dégager",
     "participePasse": "dégagé",
     "participePresent": "se dégageant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dégager",
     "present": [
       "me dégage",
@@ -85081,7 +85081,7 @@
     "infinitif": "se déplaire",
     "participePasse": "déplu",
     "participePresent": "se déplaisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "déplaire",
     "present": [
       "me déplais",
@@ -85216,7 +85216,7 @@
     "infinitif": "se dépourvoir",
     "participePasse": "dépourvu",
     "participePresent": "se dépourvoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dépourvoir",
     "present": [
       "me dépourvois",
@@ -85351,7 +85351,7 @@
     "infinitif": "se désigner",
     "participePasse": "désigné",
     "participePresent": "se désignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "désigner",
     "present": [
       "me désigne",
@@ -85486,7 +85486,7 @@
     "infinitif": "se détacher",
     "participePasse": "détaché",
     "participePresent": "se détachant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "détacher",
     "present": [
       "me détache",
@@ -85621,7 +85621,7 @@
     "infinitif": "se détruire",
     "participePasse": "détruit",
     "participePresent": "se détruisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "détruire",
     "present": [
       "me détruis",
@@ -85756,7 +85756,7 @@
     "infinitif": "se dévêtir",
     "participePasse": "dévêtu",
     "participePresent": "se dévêtant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dévêtir",
     "present": [
       "me dévêts",
@@ -85891,7 +85891,7 @@
     "infinitif": "se dire",
     "participePasse": "dit",
     "participePresent": "se disant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dire",
     "present": [
       "me dis",
@@ -86026,7 +86026,7 @@
     "infinitif": "se diriger",
     "participePasse": "dirigé",
     "participePresent": "se dirigeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "diriger",
     "present": [
       "me dirige",
@@ -86161,7 +86161,7 @@
     "infinitif": "se distinguer",
     "participePasse": "distingué",
     "participePresent": "se distinguant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "distinguer",
     "present": [
       "me distingue",
@@ -86296,7 +86296,7 @@
     "infinitif": "se distraire",
     "participePasse": "distrait",
     "participePresent": "se distrayant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "distraire",
     "present": [
       "me distrais",
@@ -86415,7 +86415,7 @@
     "infinitif": "se dominer",
     "participePasse": "dominé",
     "participePresent": "se dominant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dominer",
     "present": [
       "me domine",
@@ -86550,7 +86550,7 @@
     "infinitif": "se donner",
     "participePasse": "donné",
     "participePresent": "se donnant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "donner",
     "present": [
       "me donne",
@@ -86685,7 +86685,7 @@
     "infinitif": "se douter",
     "participePasse": "douté",
     "participePresent": "se doutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "douter",
     "present": [
       "me doute",
@@ -86820,7 +86820,7 @@
     "infinitif": "se dresser",
     "participePasse": "dressé",
     "participePresent": "se dressant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "dresser",
     "present": [
       "me dresse",
@@ -86955,7 +86955,7 @@
     "infinitif": "se faire",
     "participePasse": "fait",
     "participePresent": "se faisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "faire",
     "present": [
       "me fais",
@@ -87090,7 +87090,7 @@
     "infinitif": "se fatiguer",
     "participePasse": "fatigué",
     "participePresent": "se fatiguant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "fatiguer",
     "present": [
       "me fatigue",
@@ -87225,7 +87225,7 @@
     "infinitif": "se fermer",
     "participePasse": "fermé",
     "participePresent": "se fermant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "fermer",
     "present": [
       "me ferme",
@@ -87360,7 +87360,7 @@
     "infinitif": "se figurer",
     "participePasse": "figuré",
     "participePresent": "se figurant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "figurer",
     "present": [
       "me figure",
@@ -87495,7 +87495,7 @@
     "infinitif": "se finir",
     "participePasse": "fini",
     "participePresent": "se finissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "finir",
     "present": [
       "me finis",
@@ -87630,7 +87630,7 @@
     "infinitif": "se fixer",
     "participePasse": "fixé",
     "participePresent": "se fixant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "fixer",
     "present": [
       "me fixe",
@@ -87765,7 +87765,7 @@
     "infinitif": "se fonder",
     "participePasse": "fondé",
     "participePresent": "se fondant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "fonder",
     "present": [
       "me fonde",
@@ -87900,7 +87900,7 @@
     "infinitif": "se forcer",
     "participePasse": "forcé",
     "participePresent": "se forçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "forcer",
     "present": [
       "me force",
@@ -88035,7 +88035,7 @@
     "infinitif": "se former",
     "participePasse": "formé",
     "participePresent": "se formant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "former",
     "present": [
       "me forme",
@@ -88170,7 +88170,7 @@
     "infinitif": "se foutre",
     "participePasse": "foutu",
     "participePresent": "se foutant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "foutre",
     "present": [
       "me fous",
@@ -88305,7 +88305,7 @@
     "infinitif": "se frapper",
     "participePasse": "frappé",
     "participePresent": "se frappant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "frapper",
     "present": [
       "me frappe",
@@ -88440,7 +88440,7 @@
     "infinitif": "se frire",
     "participePasse": "frit",
     "participePresent": "se frisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "frire",
     "present": [
       "me fris",
@@ -88543,7 +88543,7 @@
     "infinitif": "se fuir",
     "participePasse": "fui",
     "participePresent": "se fuyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "fuir",
     "present": [
       "me fuis",
@@ -88678,7 +88678,7 @@
     "infinitif": "se garder",
     "participePasse": "gardé",
     "participePresent": "se gardant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "garder",
     "present": [
       "me garde",
@@ -88813,7 +88813,7 @@
     "infinitif": "se haïr",
     "participePasse": "haï",
     "participePresent": "se haïssant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "haïr",
     "present": [
       "me hais",
@@ -88948,7 +88948,7 @@
     "infinitif": "se jeter",
     "participePasse": "jeté",
     "participePresent": "se jetant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "jeter",
     "present": [
       "me jette",
@@ -89083,7 +89083,7 @@
     "infinitif": "se joindre",
     "participePasse": "joint",
     "participePresent": "se joignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "joindre",
     "present": [
       "me joins",
@@ -89218,7 +89218,7 @@
     "infinitif": "se jouer",
     "participePasse": "joué",
     "participePresent": "se jouant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "jouer",
     "present": [
       "me joue",
@@ -89353,7 +89353,7 @@
     "infinitif": "se juger",
     "participePasse": "jugé",
     "participePresent": "se jugeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "juger",
     "present": [
       "me juge",
@@ -89488,7 +89488,7 @@
     "infinitif": "se lever",
     "participePasse": "levé",
     "participePresent": "se levant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "lever",
     "present": [
       "me lève",
@@ -89623,7 +89623,7 @@
     "infinitif": "se lier",
     "participePasse": "lié",
     "participePresent": "se liant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "lier",
     "present": [
       "me lie",
@@ -89758,7 +89758,7 @@
     "infinitif": "se lire",
     "participePasse": "lu",
     "participePresent": "se lisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "lire",
     "present": [
       "me lis",
@@ -89893,7 +89893,7 @@
     "infinitif": "se lisser",
     "participePasse": "lissé",
     "participePresent": "se lissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "lisser",
     "present": [
       "me lisse",
@@ -90028,7 +90028,7 @@
     "infinitif": "se livrer",
     "participePasse": "livré",
     "participePresent": "se livrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "livrer",
     "present": [
       "me livre",
@@ -90163,7 +90163,7 @@
     "infinitif": "se maintenir",
     "participePasse": "maintenu",
     "participePresent": "se maintenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "maintenir",
     "present": [
       "me maintiens",
@@ -90298,7 +90298,7 @@
     "infinitif": "se manger",
     "participePasse": "mangé",
     "participePresent": "se mangeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "manger",
     "present": [
       "me mange",
@@ -90433,7 +90433,7 @@
     "infinitif": "se marier",
     "participePasse": "marié",
     "participePresent": "se mariant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "marier",
     "present": [
       "me marie",
@@ -90568,7 +90568,7 @@
     "infinitif": "se maudire",
     "participePasse": "maudit",
     "participePresent": "se maudissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "maudire",
     "present": [
       "me maudis",
@@ -90703,7 +90703,7 @@
     "infinitif": "se menacer",
     "participePasse": "menacé",
     "participePresent": "se menaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "menacer",
     "present": [
       "me menace",
@@ -90838,7 +90838,7 @@
     "infinitif": "se mentir",
     "participePasse": "menti",
     "participePresent": "se mentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "mentir",
     "present": [
       "me mens",
@@ -90973,7 +90973,7 @@
     "infinitif": "se mettre",
     "participePasse": "mis",
     "participePresent": "se mettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "mettre",
     "present": [
       "me mets",
@@ -91108,7 +91108,7 @@
     "infinitif": "se méprendre",
     "participePasse": "mépris",
     "participePresent": "se méprenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "me méprends",
       "te méprends",
@@ -91242,7 +91242,7 @@
     "infinitif": "se mêler",
     "participePasse": "mêlé",
     "participePresent": "se mêlant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "mêler",
     "present": [
       "me mêle",
@@ -91377,7 +91377,7 @@
     "infinitif": "se monter",
     "participePasse": "monté",
     "participePresent": "se montant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "monter",
     "present": [
       "me monte",
@@ -91512,7 +91512,7 @@
     "infinitif": "se montrer",
     "participePasse": "montré",
     "participePresent": "se montrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "montrer",
     "present": [
       "me montre",
@@ -91647,7 +91647,7 @@
     "infinitif": "se moudre",
     "participePasse": "moulu",
     "participePresent": "se moulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "moudre",
     "present": [
       "me mouds",
@@ -91977,7 +91977,7 @@
     "infinitif": "se nommer",
     "participePasse": "nommé",
     "participePresent": "se nommant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "nommer",
     "present": [
       "me nomme",
@@ -92112,7 +92112,7 @@
     "infinitif": "se nourrir",
     "participePasse": "nourri",
     "participePresent": "se nourrissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "nourrir",
     "present": [
       "me nourris",
@@ -92247,7 +92247,7 @@
     "infinitif": "se paraître",
     "participePasse": "paru",
     "participePresent": "se paraissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "paraître",
     "present": [
       "me parais",
@@ -92382,7 +92382,7 @@
     "infinitif": "se parler",
     "participePasse": "parlé",
     "participePresent": "se parlant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "parler",
     "present": [
       "me parle",
@@ -92517,7 +92517,7 @@
     "infinitif": "se partager",
     "participePasse": "partagé",
     "participePresent": "se partageant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "partager",
     "present": [
       "me partage",
@@ -92652,7 +92652,7 @@
     "infinitif": "se passer",
     "participePasse": "passé",
     "participePresent": "se passant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "passer",
     "present": [
       "me passe",
@@ -92787,7 +92787,7 @@
     "infinitif": "se payer",
     "participePasse": "payé",
     "participePresent": "se payant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "payer",
     "present": [
       "me paie, paye",
@@ -92922,7 +92922,7 @@
     "infinitif": "se pencher",
     "participePasse": "penché",
     "participePresent": "se penchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "pencher",
     "present": [
       "me penche",
@@ -93057,7 +93057,7 @@
     "infinitif": "se pendre",
     "participePasse": "pendu",
     "participePresent": "se pendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "pendre",
     "present": [
       "me pends",
@@ -93192,7 +93192,7 @@
     "infinitif": "se penser",
     "participePasse": "pensé",
     "participePresent": "se pensant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "penser",
     "present": [
       "me pense",
@@ -93327,7 +93327,7 @@
     "infinitif": "se percevoir",
     "participePasse": "perçu",
     "participePresent": "se percevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "percevoir",
     "present": [
       "me perçois",
@@ -93462,7 +93462,7 @@
     "infinitif": "se perdre",
     "participePasse": "perdu",
     "participePresent": "se perdant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "perdre",
     "present": [
       "me perds",
@@ -93597,7 +93597,7 @@
     "infinitif": "se permettre",
     "participePasse": "permis",
     "participePresent": "se permettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "permettre",
     "present": [
       "me permets",
@@ -93732,7 +93732,7 @@
     "infinitif": "se peser",
     "participePasse": "pesé",
     "participePresent": "se pesant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "peser",
     "present": [
       "me pèse",
@@ -93867,7 +93867,7 @@
     "infinitif": "se placer",
     "participePasse": "placé",
     "participePresent": "se plaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "placer",
     "present": [
       "me place",
@@ -94002,7 +94002,7 @@
     "infinitif": "se plaindre",
     "participePasse": "plaint",
     "participePresent": "se plaignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "plaindre",
     "present": [
       "me plains",
@@ -94137,7 +94137,7 @@
     "infinitif": "se plaire",
     "participePasse": "plu",
     "participePresent": "se plaisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "plaire",
     "present": [
       "me plais",
@@ -94272,7 +94272,7 @@
     "infinitif": "se plonger",
     "participePasse": "plongé",
     "participePresent": "se plongeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "plonger",
     "present": [
       "me plonge",
@@ -94407,7 +94407,7 @@
     "infinitif": "se porter",
     "participePasse": "porté",
     "participePresent": "se portant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "porter",
     "present": [
       "me porte",
@@ -94542,7 +94542,7 @@
     "infinitif": "se poser",
     "participePasse": "posé",
     "participePresent": "se posant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "poser",
     "present": [
       "me pose",
@@ -94677,7 +94677,7 @@
     "infinitif": "se posséder",
     "participePasse": "possédé",
     "participePresent": "se possédant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "posséder",
     "present": [
       "me possède",
@@ -94812,7 +94812,7 @@
     "infinitif": "se poursuivre",
     "participePasse": "poursuivi",
     "participePresent": "se poursuivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "poursuivre",
     "present": [
       "me poursuis",
@@ -94947,7 +94947,7 @@
     "infinitif": "se pourvoir",
     "participePasse": "pourvu",
     "participePresent": "se pourvoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "pourvoir",
     "present": [
       "me pourvois",
@@ -95082,7 +95082,7 @@
     "infinitif": "se pousser",
     "participePasse": "poussé",
     "participePresent": "se poussant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "pousser",
     "present": [
       "",
@@ -95217,7 +95217,7 @@
     "infinitif": "se pouvoir",
     "participePasse": "pu",
     "participePresent": "se pouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "pouvoir",
     "present": [
       "",
@@ -95344,7 +95344,7 @@
     "infinitif": "se prendre",
     "participePasse": "pris",
     "participePresent": "se prenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prendre",
     "present": [
       "me prends",
@@ -95479,7 +95479,7 @@
     "infinitif": "se presser",
     "participePasse": "pressé",
     "participePresent": "se pressant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "presser",
     "present": [
       "me presse",
@@ -95614,7 +95614,7 @@
     "infinitif": "se précipiter",
     "participePasse": "précipité",
     "participePresent": "se précipitant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "précipiter",
     "present": [
       "me précipite",
@@ -95749,7 +95749,7 @@
     "infinitif": "se prédire",
     "participePasse": "prédit",
     "participePresent": "se prédisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prédire",
     "present": [
       "me prédis",
@@ -95884,7 +95884,7 @@
     "infinitif": "se préférer",
     "participePasse": "préféré",
     "participePresent": "se préférant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "préférer",
     "present": [
       "me préfère",
@@ -96019,7 +96019,7 @@
     "infinitif": "se préparer",
     "participePasse": "préparé",
     "participePresent": "se préparant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "préparer",
     "present": [
       "me prépare",
@@ -96154,7 +96154,7 @@
     "infinitif": "se présenter",
     "participePasse": "présenté",
     "participePresent": "se présentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "présenter",
     "present": [
       "me présente",
@@ -96289,7 +96289,7 @@
     "infinitif": "se prétendre",
     "participePasse": "prétendu",
     "participePresent": "se prétendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prétendre",
     "present": [
       "me prétends",
@@ -96424,7 +96424,7 @@
     "infinitif": "se prévaloir",
     "participePasse": "prévalu",
     "participePresent": "se prévalant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prévaloir",
     "present": [
       "me prévaux",
@@ -96559,7 +96559,7 @@
     "infinitif": "se prévenir",
     "participePasse": "prévenu",
     "participePresent": "se prévenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prévenir",
     "present": [
       "me préviens",
@@ -96694,7 +96694,7 @@
     "infinitif": "se prévoir",
     "participePasse": "prévu",
     "participePresent": "se prévoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prévoir",
     "present": [
       "me prévois",
@@ -96829,7 +96829,7 @@
     "infinitif": "se prêter",
     "participePasse": "prêté",
     "participePresent": "se prêtant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prêter",
     "present": [
       "me prête",
@@ -96964,7 +96964,7 @@
     "infinitif": "se produire",
     "participePasse": "produit",
     "participePresent": "se produisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "produire",
     "present": [
       "me produis",
@@ -97099,7 +97099,7 @@
     "infinitif": "se promener",
     "participePasse": "promené",
     "participePresent": "se promenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "promener",
     "present": [
       "me promène",
@@ -97234,7 +97234,7 @@
     "infinitif": "se promettre",
     "participePasse": "promis",
     "participePresent": "se promettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "promettre",
     "present": [
       "me promets",
@@ -97369,7 +97369,7 @@
     "infinitif": "se promouvoir",
     "participePasse": "promu",
     "participePresent": "se promouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "promouvoir",
     "present": [
       "me promeus",
@@ -97504,7 +97504,7 @@
     "infinitif": "se prononcer",
     "participePasse": "prononcé",
     "participePresent": "se prononçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prononcer",
     "present": [
       "me prononce",
@@ -97639,7 +97639,7 @@
     "infinitif": "se proposer",
     "participePasse": "proposé",
     "participePresent": "se proposant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "proposer",
     "present": [
       "me propose",
@@ -97774,7 +97774,7 @@
     "infinitif": "se protéger",
     "participePasse": "protégé",
     "participePresent": "se protégeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "protéger",
     "present": [
       "me protège",
@@ -97909,7 +97909,7 @@
     "infinitif": "se prouver",
     "participePasse": "prouvé",
     "participePresent": "se prouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "prouver",
     "present": [
       "me prouve",
@@ -98044,7 +98044,7 @@
     "infinitif": "se quitter",
     "participePasse": "quitté",
     "participePresent": "se quittant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "quitter",
     "present": [
       "me quitte",
@@ -98179,7 +98179,7 @@
     "infinitif": "se raconter",
     "participePasse": "raconté",
     "participePresent": "se racontant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "raconter",
     "present": [
       "me raconte",
@@ -98314,7 +98314,7 @@
     "infinitif": "se ramasser",
     "participePasse": "ramassé",
     "participePresent": "se ramassant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ramasser",
     "present": [
       "me ramasse",
@@ -98449,7 +98449,7 @@
     "infinitif": "se ramener",
     "participePasse": "ramené",
     "participePresent": "se ramenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ramener",
     "present": [
       "me ramène",
@@ -98584,7 +98584,7 @@
     "infinitif": "se rappeler",
     "participePasse": "rappelé",
     "participePresent": "se rappelant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rappeler",
     "present": [
       "me rappelle",
@@ -98719,7 +98719,7 @@
     "infinitif": "se rapporter",
     "participePasse": "rapporté",
     "participePresent": "se rapportant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rapporter",
     "present": [
       "me rapporte",
@@ -98854,7 +98854,7 @@
     "infinitif": "se rasseoir",
     "participePasse": "se rassoyant",
     "participePresent": "se rasseyant,",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rasseoir",
     "present": [
       "me rassieds, rassois",
@@ -98989,7 +98989,7 @@
     "infinitif": "se rassoir",
     "participePasse": "se rassoyant",
     "participePresent": "se rasseyant,",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rassoir",
     "present": [
       "me rassieds, rassois",
@@ -99124,7 +99124,7 @@
     "infinitif": "se rassurer",
     "participePasse": "rassuré",
     "participePresent": "se rassurant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rassurer",
     "present": [
       "me rassure",
@@ -99259,7 +99259,7 @@
     "infinitif": "se rebouillir",
     "participePasse": "rebouilli",
     "participePresent": "se rebouillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rebouillir",
     "present": [
       "me rebous",
@@ -99394,7 +99394,7 @@
     "infinitif": "se recevoir",
     "participePasse": "reçu",
     "participePresent": "se recevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "recevoir",
     "present": [
       "me reçois",
@@ -99529,7 +99529,7 @@
     "infinitif": "se reclure",
     "participePasse": "reclus",
     "participePresent": "se recluant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reclure",
     "passeCompose": [
       "me suis reclus(e)",
@@ -99600,7 +99600,7 @@
     "infinitif": "se recommencer",
     "participePasse": "recommencé",
     "participePresent": "se recommençant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "recommencer",
     "present": [
       "me recommence",
@@ -99735,7 +99735,7 @@
     "infinitif": "se reconcevoir",
     "participePasse": "reconçu",
     "participePresent": "se reconcevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reconcevoir",
     "present": [
       "me reconçois",
@@ -99870,7 +99870,7 @@
     "infinitif": "se reconnaître",
     "participePasse": "reconnu",
     "participePresent": "se reconnaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reconnaître",
     "present": [
       "me reconnais",
@@ -100005,7 +100005,7 @@
     "infinitif": "se reconquérir",
     "participePasse": "reconquis",
     "participePresent": "se reconquérant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reconquérir",
     "present": [
       "me reconquiers",
@@ -100140,7 +100140,7 @@
     "infinitif": "se recoudre",
     "participePasse": "recousu",
     "participePresent": "se recousant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "recoudre",
     "present": [
       "me recouds",
@@ -100275,7 +100275,7 @@
     "infinitif": "se recourir",
     "participePasse": "recouru",
     "participePresent": "se recourant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "recourir",
     "present": [
       "me recours",
@@ -100410,7 +100410,7 @@
     "infinitif": "se recueillir",
     "participePasse": "recueilli",
     "participePresent": "se recueillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "recueillir",
     "present": [
       "me recueille",
@@ -100545,7 +100545,7 @@
     "infinitif": "se reculer",
     "participePasse": "reculé",
     "participePresent": "se reculant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reculer",
     "present": [
       "me recule",
@@ -100814,7 +100814,7 @@
     "infinitif": "se redire",
     "participePasse": "redit",
     "participePresent": "se redisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "redire",
     "present": [
       "me redis",
@@ -100949,7 +100949,7 @@
     "infinitif": "se refuser",
     "participePasse": "refusé",
     "participePresent": "se refusant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "refuser",
     "present": [
       "me refuse",
@@ -101084,7 +101084,7 @@
     "infinitif": "se regarder",
     "participePasse": "regardé",
     "participePresent": "se regardant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "regarder",
     "present": [
       "me regarde",
@@ -101219,7 +101219,7 @@
     "infinitif": "se regeler",
     "participePasse": "regelé",
     "participePresent": "se regelant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "regeler",
     "present": [
       "me regèle",
@@ -101354,7 +101354,7 @@
     "infinitif": "se rejeter",
     "participePasse": "rejeté",
     "participePresent": "se rejetant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rejeter",
     "present": [
       "me rejette",
@@ -101489,7 +101489,7 @@
     "infinitif": "se rejoindre",
     "participePasse": "rejoint",
     "participePresent": "se rejoignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rejoindre",
     "present": [
       "me rejoins",
@@ -101624,7 +101624,7 @@
     "infinitif": "se relever",
     "participePasse": "relevé",
     "participePresent": "se relevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "relever",
     "present": [
       "me relève",
@@ -101759,7 +101759,7 @@
     "infinitif": "se relire",
     "participePasse": "relu",
     "participePresent": "se relisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "relire",
     "present": [
       "me relis",
@@ -101894,7 +101894,7 @@
     "infinitif": "se remarquer",
     "participePasse": "remarqué",
     "participePresent": "se remarquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remarquer",
     "present": [
       "me remarque",
@@ -102029,7 +102029,7 @@
     "infinitif": "se remercier",
     "participePasse": "remercié",
     "participePresent": "se remerciant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remercier",
     "present": [
       "me remercie",
@@ -102164,7 +102164,7 @@
     "infinitif": "se remettre",
     "participePasse": "remis",
     "participePresent": "se remettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remettre",
     "present": [
       "me remets",
@@ -102299,7 +102299,7 @@
     "infinitif": "se remonter",
     "participePasse": "remonté",
     "participePresent": "se remontant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remonter",
     "present": [
       "me remonte",
@@ -102434,7 +102434,7 @@
     "infinitif": "se remoudre",
     "participePasse": "remoulu",
     "participePresent": "se remoulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remoudre",
     "present": [
       "me remouds",
@@ -102569,7 +102569,7 @@
     "infinitif": "se remplacer",
     "participePasse": "remplacé",
     "participePresent": "se remplaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remplacer",
     "present": [
       "me remplace",
@@ -102704,7 +102704,7 @@
     "infinitif": "se remplir",
     "participePasse": "rempli",
     "participePresent": "se remplissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "remplir",
     "present": [
       "me remplis",
@@ -102839,7 +102839,7 @@
     "infinitif": "se rencontrer",
     "participePasse": "rencontré",
     "participePresent": "se rencontrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rencontrer",
     "present": [
       "me rencontre",
@@ -102974,7 +102974,7 @@
     "infinitif": "se rendormir",
     "participePasse": "rendormi",
     "participePresent": "se rendormant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rendormir",
     "present": [
       "me rendors",
@@ -103109,7 +103109,7 @@
     "infinitif": "se rendre",
     "participePasse": "rendu",
     "participePresent": "se rendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rendre",
     "present": [
       "me rends",
@@ -103244,7 +103244,7 @@
     "infinitif": "se rentrer",
     "participePasse": "rentré",
     "participePresent": "se rentrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rentrer",
     "present": [
       "me rentre",
@@ -103379,7 +103379,7 @@
     "infinitif": "se renverser",
     "participePasse": "renversé",
     "participePresent": "se renversant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "renverser",
     "present": [
       "me renverse",
@@ -103514,7 +103514,7 @@
     "infinitif": "se renvoyer",
     "participePasse": "renvoyé",
     "participePresent": "se renvoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "renvoyer",
     "present": [
       "me renvoie",
@@ -103649,7 +103649,7 @@
     "infinitif": "se repaître",
     "participePasse": "repu",
     "participePresent": "se repaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "repaître",
     "present": [
       "me repais",
@@ -103784,7 +103784,7 @@
     "infinitif": "se reparaître",
     "participePasse": "reparu",
     "participePresent": "se reparaissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reparaître",
     "present": [
       "me reparais",
@@ -103919,7 +103919,7 @@
     "infinitif": "se reposer",
     "participePasse": "reposé",
     "participePresent": "se reposant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reposer",
     "present": [
       "me repose",
@@ -104054,7 +104054,7 @@
     "infinitif": "se reprendre",
     "participePasse": "repris",
     "participePresent": "se reprenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reprendre",
     "present": [
       "me reprends",
@@ -104189,7 +104189,7 @@
     "infinitif": "se représenter",
     "participePasse": "représenté",
     "participePresent": "se représentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "représenter",
     "present": [
       "me représente",
@@ -104324,7 +104324,7 @@
     "infinitif": "se requérir",
     "participePasse": "requis",
     "participePresent": "se requérant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "requérir",
     "present": [
       "me requiers",
@@ -104459,7 +104459,7 @@
     "infinitif": "se respecter",
     "participePasse": "respecté",
     "participePresent": "se respectant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "respecter",
     "present": [
       "me respecte",
@@ -104594,7 +104594,7 @@
     "infinitif": "se ressembler",
     "participePasse": "ressemblé",
     "participePresent": "se ressemblant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "ressembler",
     "present": [
       "me ressemble",
@@ -104729,7 +104729,7 @@
     "infinitif": "se resservir",
     "participePasse": "resservi",
     "participePresent": "se resservant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "resservir",
     "present": [
       "me ressers",
@@ -104864,7 +104864,7 @@
     "infinitif": "se reteindre",
     "participePasse": "reteint",
     "participePresent": "se reteignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "reteindre",
     "present": [
       "me reteins",
@@ -104999,7 +104999,7 @@
     "infinitif": "se retenir",
     "participePasse": "retenu",
     "participePresent": "se retenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "retenir",
     "present": [
       "me retiens",
@@ -105134,7 +105134,7 @@
     "infinitif": "se retirer",
     "participePasse": "retiré",
     "participePresent": "se retirant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "retirer",
     "present": [
       "me retire",
@@ -105269,7 +105269,7 @@
     "infinitif": "se retourner",
     "participePasse": "retourné",
     "participePresent": "se retournant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "retourner",
     "present": [
       "me retourne",
@@ -105404,7 +105404,7 @@
     "infinitif": "se retreindre",
     "participePasse": "retreint",
     "participePresent": "se retreignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "retreindre",
     "present": [
       "me retreins",
@@ -105539,7 +105539,7 @@
     "infinitif": "se retrouver",
     "participePasse": "retrouvé",
     "participePresent": "se retrouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "retrouver",
     "present": [
       "me retrouve",
@@ -105674,7 +105674,7 @@
     "infinitif": "se revaloir",
     "participePasse": "revalu",
     "participePresent": "se revalant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "revaloir",
     "present": [
       "me revaux",
@@ -105809,7 +105809,7 @@
     "infinitif": "se revêtir",
     "participePasse": "revêtu",
     "participePresent": "se revêtant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "revêtir",
     "present": [
       "me revêts",
@@ -105944,7 +105944,7 @@
     "infinitif": "se revivre",
     "participePasse": "revécu",
     "participePresent": "se revivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "revivre",
     "present": [
       "me revis",
@@ -106079,7 +106079,7 @@
     "infinitif": "se revoir",
     "participePasse": "revu",
     "participePresent": "se revoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "revoir",
     "present": [
       "me revois",
@@ -106214,7 +106214,7 @@
     "infinitif": "se réclamer",
     "participePasse": "réclamé",
     "participePresent": "se réclamant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réclamer",
     "present": [
       "me réclame",
@@ -106349,7 +106349,7 @@
     "infinitif": "se réduire",
     "participePasse": "réduit",
     "participePresent": "se réduisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réduire",
     "present": [
       "me réduis",
@@ -106484,7 +106484,7 @@
     "infinitif": "se réélire",
     "participePasse": "réélu",
     "participePresent": "se réélisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réélire",
     "present": [
       "me réélis",
@@ -106619,7 +106619,7 @@
     "infinitif": "se réfléchir",
     "participePasse": "réfléchi",
     "participePresent": "se réfléchissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réfléchir",
     "present": [
       "me réfléchis",
@@ -106754,7 +106754,7 @@
     "infinitif": "se répandre",
     "participePasse": "répandu",
     "participePresent": "se répandant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "répandre",
     "present": [
       "me répands",
@@ -106889,7 +106889,7 @@
     "infinitif": "se répéter",
     "participePasse": "répété",
     "participePresent": "se répétant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "répéter",
     "present": [
       "me répète",
@@ -107024,7 +107024,7 @@
     "infinitif": "se répondre",
     "participePasse": "répondu",
     "participePresent": "se répondant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "répondre",
     "present": [
       "me réponds",
@@ -107159,7 +107159,7 @@
     "infinitif": "se réserver",
     "participePasse": "réservé",
     "participePresent": "se réservant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réserver",
     "present": [
       "me réserve",
@@ -107294,7 +107294,7 @@
     "infinitif": "se résister",
     "participePasse": "résisté",
     "participePresent": "se résistant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "résister",
     "present": [
       "me résiste",
@@ -107429,7 +107429,7 @@
     "infinitif": "se résoudre",
     "participePasse": "résolu",
     "participePresent": "se résolvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "résoudre",
     "present": [
       "me résous",
@@ -107564,7 +107564,7 @@
     "infinitif": "se réunir",
     "participePasse": "réuni",
     "participePresent": "se réunissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réunir",
     "present": [
       "me réunis",
@@ -107699,7 +107699,7 @@
     "infinitif": "se réveiller",
     "participePasse": "réveillé",
     "participePresent": "se réveillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "réveiller",
     "present": [
       "me réveille",
@@ -107834,7 +107834,7 @@
     "infinitif": "se révéler",
     "participePasse": "révélé",
     "participePresent": "se révélant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "révéler",
     "present": [
       "me révèle",
@@ -107969,7 +107969,7 @@
     "infinitif": "se rêver",
     "participePasse": "rêvé",
     "participePresent": "se rêvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rêver",
     "present": [
       "me rêve",
@@ -108104,7 +108104,7 @@
     "infinitif": "se rire",
     "participePasse": "ri",
     "participePresent": "se riant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rire",
     "present": [
       "me ris",
@@ -108239,7 +108239,7 @@
     "infinitif": "se risquer",
     "participePasse": "risqué",
     "participePresent": "se risquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "risquer",
     "present": [
       "me risque",
@@ -108374,7 +108374,7 @@
     "infinitif": "se rompre",
     "participePasse": "rompu",
     "participePresent": "se rompant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rompre",
     "present": [
       "me romps",
@@ -108509,7 +108509,7 @@
     "infinitif": "se rouler",
     "participePasse": "roulé",
     "participePresent": "se roulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rouler",
     "present": [
       "me roule",
@@ -108644,7 +108644,7 @@
     "infinitif": "se rouvrir",
     "participePasse": "rouvert",
     "participePresent": "se rouvrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "rouvrir",
     "present": [
       "me rouvre",
@@ -108779,7 +108779,7 @@
     "infinitif": "se saisir",
     "participePasse": "saisi",
     "participePresent": "se saisissant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "saisir",
     "present": [
       "me saisis",
@@ -108914,7 +108914,7 @@
     "infinitif": "se saluer",
     "participePasse": "salué",
     "participePresent": "se saluant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "saluer",
     "present": [
       "",
@@ -109049,7 +109049,7 @@
     "infinitif": "se satisfaire",
     "participePasse": "satisfait",
     "participePresent": "se satisfaisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "satisfaire",
     "present": [
       "me satisfais",
@@ -109184,7 +109184,7 @@
     "infinitif": "se sauter",
     "participePasse": "sauté",
     "participePresent": "se sautant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sauter",
     "present": [
       "",
@@ -109319,7 +109319,7 @@
     "infinitif": "se sauver",
     "participePasse": "sauvé",
     "participePresent": "se sauvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sauver",
     "present": [
       "me sauve",
@@ -109454,7 +109454,7 @@
     "infinitif": "se savoir",
     "participePasse": "su",
     "participePresent": "se sachant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "savoir",
     "present": [
       "me sais",
@@ -109589,7 +109589,7 @@
     "infinitif": "se secourir",
     "participePasse": "secouru",
     "participePresent": "se secourant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "secourir",
     "present": [
       "me secours",
@@ -109724,7 +109724,7 @@
     "infinitif": "se sembler",
     "participePasse": "semblé",
     "participePresent": "se semblant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sembler",
     "present": [
       "me semble",
@@ -109859,7 +109859,7 @@
     "infinitif": "se sentir",
     "participePasse": "senti",
     "participePresent": "se sentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sentir",
     "present": [
       "me sens",
@@ -109994,7 +109994,7 @@
     "infinitif": "se serrer",
     "participePasse": "serré",
     "participePresent": "se serrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "serrer",
     "present": [
       "me serre",
@@ -110129,7 +110129,7 @@
     "infinitif": "se servir",
     "participePasse": "servi",
     "participePresent": "se servant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "servir",
     "present": [
       "me sers",
@@ -110264,7 +110264,7 @@
     "infinitif": "se séparer",
     "participePasse": "séparé",
     "participePresent": "se séparant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "séparer",
     "present": [
       "me sépare",
@@ -110399,7 +110399,7 @@
     "infinitif": "se signer",
     "participePasse": "signé",
     "participePresent": "se signant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "signer",
     "present": [
       "me signe",
@@ -110534,7 +110534,7 @@
     "infinitif": "se signifier",
     "participePasse": "signifié",
     "participePresent": "se signifiant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "signifier",
     "present": [
       "me signifie",
@@ -110669,7 +110669,7 @@
     "infinitif": "se songer",
     "participePasse": "songé",
     "participePresent": "se songeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "songer",
     "present": [
       "me songe",
@@ -110804,7 +110804,7 @@
     "infinitif": "se sortir",
     "participePasse": "sorti",
     "participePresent": "se sortant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sortir",
     "present": [
       "me sors",
@@ -110939,7 +110939,7 @@
     "infinitif": "se souffrir",
     "participePasse": "souffert",
     "participePresent": "se souffrant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "souffrir",
     "present": [
       "me souffre",
@@ -111074,7 +111074,7 @@
     "infinitif": "se souhaiter",
     "participePasse": "souhaité",
     "participePresent": "se souhaitant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "souhaiter",
     "present": [
       "me souhaite",
@@ -111209,7 +111209,7 @@
     "infinitif": "se soulever",
     "participePasse": "soulevé",
     "participePresent": "se soulevant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "soulever",
     "present": [
       "me soulève",
@@ -111344,7 +111344,7 @@
     "infinitif": "se soumettre",
     "participePasse": "soumis",
     "participePresent": "se soumettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "soumettre",
     "present": [
       "me soumets",
@@ -111479,7 +111479,7 @@
     "infinitif": "se sourire",
     "participePasse": "souri",
     "participePresent": "se souriant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "sourire",
     "present": [
       "me souris",
@@ -111614,7 +111614,7 @@
     "infinitif": "se soustraire",
     "participePasse": "soustrait",
     "participePresent": "se soustrayant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "soustraire",
     "present": [
       "me soustrais",
@@ -111733,7 +111733,7 @@
     "infinitif": "se soutenir",
     "participePasse": "soutenu",
     "participePresent": "se soutenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "soutenir",
     "present": [
       "me soutiens",
@@ -111868,7 +111868,7 @@
     "infinitif": "se souvenir",
     "participePasse": "souvenu",
     "participePresent": "se souvenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "souvenir",
     "present": [
       "me souviens",
@@ -112002,7 +112002,7 @@
   {
     "infinitif": "se stupéfaire",
     "participePasse": "stupéfait",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "stupéfaire",
     "present": [
       "",
@@ -112081,7 +112081,7 @@
     "infinitif": "se suffire",
     "participePasse": "suffi",
     "participePresent": "se suffisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "suffire",
     "present": [
       "me suffis",
@@ -112216,7 +112216,7 @@
     "infinitif": "se suivre",
     "participePasse": "suivi",
     "participePresent": "se suivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "suivre",
     "present": [
       "me suis",
@@ -112351,7 +112351,7 @@
     "infinitif": "se suppléer",
     "participePasse": "suppléé",
     "participePresent": "se suppléant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "suppléer",
     "present": [
       "me supplée",
@@ -112486,7 +112486,7 @@
     "infinitif": "se supporter",
     "participePasse": "supporté",
     "participePresent": "se supportant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "supporter",
     "present": [
       "me supporte",
@@ -112621,7 +112621,7 @@
     "infinitif": "se supposer",
     "participePasse": "supposé",
     "participePresent": "se supposant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "supposer",
     "present": [
       "me suppose",
@@ -112756,7 +112756,7 @@
     "infinitif": "se surfaire",
     "participePasse": "surfait",
     "participePresent": "se surfaisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surfaire",
     "present": [
       "me surfais",
@@ -112891,7 +112891,7 @@
     "infinitif": "se surgeler",
     "participePasse": "surgelé",
     "participePresent": "se surgelant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surgeler",
     "present": [
       "me surgèle",
@@ -113026,7 +113026,7 @@
     "infinitif": "se surmener",
     "participePasse": "surmené",
     "participePresent": "se surmenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surmener",
     "present": [
       "me surmène",
@@ -113161,7 +113161,7 @@
     "infinitif": "se surprendre",
     "participePasse": "surpris",
     "participePresent": "se surprenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surprendre",
     "present": [
       "me surprends",
@@ -113296,7 +113296,7 @@
     "infinitif": "se surproduire",
     "participePasse": "surproduit",
     "participePresent": "se surproduisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surproduire",
     "present": [
       "me surproduis",
@@ -113431,7 +113431,7 @@
     "infinitif": "se surprotéger",
     "participePasse": "surprotégé",
     "participePresent": "se surprotégeant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surprotéger",
     "present": [
       "me surprotège",
@@ -113566,7 +113566,7 @@
     "infinitif": "se surveiller",
     "participePasse": "surveillé",
     "participePresent": "se surveillant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "surveiller",
     "present": [
       "me surveille",
@@ -113701,7 +113701,7 @@
     "infinitif": "se taire",
     "participePasse": "tu",
     "participePresent": "se taisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "taire",
     "present": [
       "me tais",
@@ -113836,7 +113836,7 @@
     "infinitif": "se teindre",
     "participePasse": "teint",
     "participePresent": "se teignant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "teindre",
     "present": [
       "me teins",
@@ -113971,7 +113971,7 @@
     "infinitif": "se tendre",
     "participePasse": "tendu",
     "participePresent": "se tendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tendre",
     "present": [
       "me tends",
@@ -114106,7 +114106,7 @@
     "infinitif": "se tenir",
     "participePasse": "tenu",
     "participePresent": "se tenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tenir",
     "present": [
       "me tiens",
@@ -114241,7 +114241,7 @@
     "infinitif": "se tenter",
     "participePasse": "tenté",
     "participePresent": "se tentant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tenter",
     "present": [
       "me tente",
@@ -114376,7 +114376,7 @@
     "infinitif": "se terminer",
     "participePasse": "terminé",
     "participePresent": "se terminant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "terminer",
     "present": [
       "me termine",
@@ -114511,7 +114511,7 @@
     "infinitif": "se tirer",
     "participePasse": "tiré",
     "participePresent": "se tirant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tirer",
     "present": [
       "me tire",
@@ -114646,7 +114646,7 @@
     "infinitif": "se toucher",
     "participePasse": "touché",
     "participePresent": "se touchant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "toucher",
     "present": [
       "me touche",
@@ -114781,7 +114781,7 @@
     "infinitif": "se tourner",
     "participePasse": "tourné",
     "participePresent": "se tournant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tourner",
     "present": [
       "me tourne",
@@ -114916,7 +114916,7 @@
     "infinitif": "se tracer",
     "participePasse": "tracé",
     "participePresent": "se traçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tracer",
     "present": [
       "me trace",
@@ -115051,7 +115051,7 @@
     "infinitif": "se traduire",
     "participePasse": "traduit",
     "participePresent": "se traduisant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "traduire",
     "present": [
       "me traduis",
@@ -115186,7 +115186,7 @@
     "infinitif": "se traire",
     "participePasse": "trait",
     "participePresent": "se trayant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "traire",
     "present": [
       "me trais",
@@ -115305,7 +115305,7 @@
     "infinitif": "se traiter",
     "participePasse": "traité",
     "participePresent": "se traitant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "traiter",
     "present": [
       "me traite",
@@ -115440,7 +115440,7 @@
     "infinitif": "se traîner",
     "participePasse": "traîné",
     "participePresent": "se traînant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "traîner",
     "present": [
       "me traîne",
@@ -115575,7 +115575,7 @@
     "infinitif": "se transcrire",
     "participePasse": "transcrit",
     "participePresent": "se transcrivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "transcrire",
     "present": [
       "me transcris",
@@ -115710,7 +115710,7 @@
     "infinitif": "se transformer",
     "participePasse": "transformé",
     "participePresent": "se transformant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "transformer",
     "present": [
       "me transforme",
@@ -115845,7 +115845,7 @@
     "infinitif": "se transmettre",
     "participePasse": "transmis",
     "participePresent": "se transmettant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "transmettre",
     "present": [
       "me transmets",
@@ -115980,7 +115980,7 @@
     "infinitif": "se tromper",
     "participePasse": "trompé",
     "participePresent": "se trompant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tromper",
     "present": [
       "me trompe",
@@ -116115,7 +116115,7 @@
     "infinitif": "se troubler",
     "participePasse": "troublé",
     "participePresent": "se troublant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "troubler",
     "present": [
       "me trouble",
@@ -116250,7 +116250,7 @@
     "infinitif": "se trouver",
     "participePasse": "trouvé",
     "participePresent": "se trouvant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "trouver",
     "present": [
       "me trouve",
@@ -116385,7 +116385,7 @@
     "infinitif": "se tuer",
     "participePasse": "tué",
     "participePresent": "se tuant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "tuer",
     "present": [
       "me tue",
@@ -116520,7 +116520,7 @@
     "infinitif": "se vaincre",
     "participePasse": "vaincu",
     "participePresent": "se vainquant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vaincre",
     "present": [
       "me vaincs",
@@ -116655,7 +116655,7 @@
     "infinitif": "se valoir",
     "participePasse": "valu",
     "participePresent": "se valant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "valoir",
     "present": [
       "me vaux",
@@ -116790,7 +116790,7 @@
     "infinitif": "se vendre",
     "participePasse": "vendu",
     "participePresent": "se vendant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vendre",
     "present": [
       "me vends",
@@ -116925,7 +116925,7 @@
     "infinitif": "se verglacer",
     "participePasse": "verglacé",
     "participePresent": "se verglaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "verglacer",
     "present": [
       "",
@@ -117052,7 +117052,7 @@
     "infinitif": "se verser",
     "participePasse": "versé",
     "participePresent": "se versant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "verser",
     "present": [
       "me verse",
@@ -117187,7 +117187,7 @@
     "infinitif": "se vêtir",
     "participePasse": "vêtu",
     "participePresent": "se vêtant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vêtir",
     "present": [
       "me vêts",
@@ -117322,7 +117322,7 @@
     "infinitif": "se violacer",
     "participePasse": "violacé",
     "participePresent": "se violaçant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "violacer",
     "present": [
       "me violace",
@@ -117457,7 +117457,7 @@
     "infinitif": "se vivifier",
     "participePasse": "vivifié",
     "participePresent": "se vivifiant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vivifier",
     "present": [
       "me vivifie",
@@ -117592,7 +117592,7 @@
     "infinitif": "se vivre",
     "participePasse": "vécu",
     "participePresent": "se vivant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vivre",
     "present": [
       "me vis",
@@ -117727,7 +117727,7 @@
     "infinitif": "se voir",
     "participePasse": "vu",
     "participePresent": "se voyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "voir",
     "present": [
       "me vois",
@@ -117862,7 +117862,7 @@
     "infinitif": "se voler",
     "participePasse": "volé",
     "participePresent": "se volant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "voler",
     "present": [
       "me vole",
@@ -117997,7 +117997,7 @@
     "infinitif": "se vouloir",
     "participePasse": "voulu",
     "participePresent": "se voulant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vouloir",
     "present": [
       "me veux",
@@ -118132,7 +118132,7 @@
     "infinitif": "se vouvoyer",
     "participePasse": "vouvoyé",
     "participePresent": "se vouvoyant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formeNonPronominale": "vouvoyer",
     "present": [
       "me vouvoie",
@@ -119883,7 +119883,7 @@
     "infinitif": "sortir",
     "participePasse": "sorti",
     "participePresent": "sortant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se sortir",
     "present": [
       "sors",
@@ -121496,7 +121496,7 @@
     "infinitif": "souvenir",
     "participePasse": "souvenu",
     "participePresent": "souvenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "formePronominale": "se souvenir",
     "present": [
       "",
@@ -123985,7 +123985,7 @@
     "infinitif": "survenir",
     "participePasse": "survenu",
     "participePresent": "survenant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "surviens",
       "surviens",
@@ -125270,7 +125270,7 @@
     "infinitif": "tomber",
     "participePasse": "tombé",
     "participePresent": "tombant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "tombe",
       "tombes",
@@ -129106,7 +129106,7 @@
     "infinitif": "venir",
     "participePasse": "venu",
     "participePresent": "venant",
-    "auxiliaire": "être",
+    "auxiliaire": "être",
     "present": [
       "viens",
       "viens",

@@ -145,8 +145,9 @@ const Complete = () => {
         const currentCorrection = [...correction]
         currentCorrection[pos].value = e.target.value
         setCorrection(currentCorrection)
-    }
-
+  }
+  
+  
     return (
         <>{
             data.length > 0 ?

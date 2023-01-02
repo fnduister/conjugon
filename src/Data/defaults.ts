@@ -113,6 +113,10 @@ export const d_ongoingGame = {
   maxScore: 1
 }
 
+export const specialTenses = [
+  "infinitif", "auxiliaire", "participePasse", "participePresent",
+"imperatif", "imperatifPasse", "formePronominale", "formeNonPronominale"]
+
 export const d_customTenseGroups = [
   { title: "facile", data: ["present", "passeSimple"] },
 { title: "trop dure", data: ["plusQueParfait", "futurAnterieur"] }

@@ -7,13 +7,14 @@ import { GroupInfo } from '../../Data/interfaces';
 interface Props {
   chipData: GroupInfo[];
   selectFunc: (data: string[], selected: boolean) => void
+  isTense?: boolean
 }
 
 const ListItem = styled('li')(({ theme }) => ({
   margin: theme.spacing(0.5),
 }));
 
-const ListChip = ({ chipData, selectFunc }: Props) => {
+const ListChip = ({ chipData, selectFunc, isTense }: Props) => {
 
   return (
     <Paper
@@ -31,7 +32,7 @@ const ListChip = ({ chipData, selectFunc }: Props) => {
       {chipData.map((data, key) => {
         return (
           <ListItem key={key} >
-            <ItemChip isTense selectFunc={selectFunc} data={data.title} select hover popperData={data.data} />
+            <ItemChip isTense={isTense} selectFunc={selectFunc} data={data.title} select hover popperData={data.data} />
           </ListItem>
         );
       })}

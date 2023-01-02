@@ -7,7 +7,7 @@ import InputChip from './../../Components/InputChip/InputChip';
 import ListChip from './../../Components/ListChip/ListChip';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { currentCustomTenseGroupsState, currentCustomVerbGroupsState, currentGameState, currentPresetTenseGroupsState, currentPresetVerbGroupsState, currentTensesState, currentVerbsState, ongoingGameState, tensesState, verbsState } from '../../Data/State';
-import { speeds } from '../../Data/defaults';
+import { speeds, specialTenses } from '../../Data/defaults';
 
 const Pregame = () => {
   const customVerbGroups = useRecoilValue(currentCustomVerbGroupsState)
@@ -78,6 +78,10 @@ const Pregame = () => {
     setOngoingGameInfo(prev => ({ ...prev, maxTime: +event.target.value }))
   };
 
+  const getTenses = (): string[] => {
+    return (currentGame.url !== "race") ? tenses.filter(tense => !specialTenses.includes(tense)) : tenses
+  }
+
   return (
     <>
       <Typography sx={{ m: 0, mb: 2, ml: 3, fontWeight: 'bold' }} variant="h4">{currentGame.title}</Typography>
@@ -95,7 +99,7 @@ const Pregame = () => {
         </Container>
         <Container>
           <Typography variant="body1">Choisir les temps</Typography>
-          <InputChip isTense selectList={tenses} changeFunc={handleChangeTense} placeholder='Le temps' deleteFunc={handleDeleteTense} currentList={currentTenses} />
+          <InputChip isTense selectList={getTenses()} changeFunc={handleChangeTense} placeholder='Le temps' deleteFunc={handleDeleteTense} currentList={currentTenses} />
           <Typography variant="body1">Sélectionne un groupe custom</Typography>
           <ListChip chipData={currentCustomTenseGroups} selectFunc={handleSelectTense} />
           <Typography variant="body1">Sélectionne un groupe prédéfini</Typography>

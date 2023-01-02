@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { Button, Container, Typography, Avatar } from '@mui/material';
+import React, { useState, useEffect } from 'react'
+import { Button, Container, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import { useRecoilValue, useRecoilState, useResetRecoilState } from 'recoil';
+import { useRecoilValue, useRecoilState } from 'recoil';
 import { currentTensesState, currentVerbsState, conjugationTables, ongoingGameState, tensesState, timerState } from './../../../Data/State';
 import { shuffle, randElement, findPronoun } from './../../../utils';
-import { d_pronouns, VerbToText } from '../../../Data/defaults'
+import { VerbToText } from '../../../Data/defaults'
 import { RaceGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces';
-import { Navigate, useNavigate } from 'react-router-dom';
 import ProgressBar from '../../../Components/ProgressBar/ProgressBar';
 import Score from '../Score/Score';
 import { useSpring, animated, config } from '@react-spring/web';
@@ -55,10 +54,13 @@ const Race = () => {
     }))
 
     const verbTables = tables.filter(table => currentVerbs.includes(table.infinitif))
+    console.log('🚀 ~ resetGame ~ currentVerbs', currentVerbs);
+    console.log('🚀 ~ resetGame ~ verbTables', verbTables);
     let currentData = []
     let maxScore = 0
     for (var i = 0; i < ongoingGameInfo.maxStep; i++) {
       const stepTense: string = currentTenses[Math.floor(Math.random() * currentTenses.length)]
+      console.log('🚀 ~ resetGame ~ stepTense', stepTense);
 
       // get the possible tenses, we want at least 2 of the tense selected and the reset is random
       let visibleTenses: string[] = []
@@ -73,9 +75,12 @@ const Race = () => {
       } else {
         visibleTenses = shuffle(currentTenses).slice(0, 3)
       }
+      console.log('🚀 ~ resetGame ~ visibleTenses', visibleTenses);
 
       const stepVerbTable: Verb = randElement(verbTables) as Verb
+      console.log('🚀 ~ resetGame ~ stepVerbTable', stepVerbTable);
       const vbs = stepVerbTable[stepTense as keyof Verb]
+      console.log('🚀 ~ resetGame ~ vbs', vbs);
       let stepPronounsPos = -1
       let pronoun = ""
       let word = ""
@@ -174,13 +179,13 @@ const Race = () => {
           </Container>
           <Container sx={{ display: 'flex', justifyContent: 'center', mt: 5, mb: 5 }}>
             <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[0])} color="secondary" sx={{ m: 1 }} variant='contained'>
-              {data[ongoingGameInfo.currentStep - 1].visibleTenses[0]}
+              {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[0] as keyof typeof VerbToText]}
             </Button>
             <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[1])} color="secondary" sx={{ m: 1 }} variant='contained'>
-              {data[ongoingGameInfo.currentStep - 1].visibleTenses[1]}
+              {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[1] as keyof typeof VerbToText]}
             </Button>
             <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[2])} color="secondary" sx={{ m: 1 }} variant='contained'>
-              {data[ongoingGameInfo.currentStep - 1].visibleTenses[2]}
+              {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[2] as keyof typeof VerbToText]}
             </Button>
           </Container>
           {!showScore && <ProgressBar nextStep={nextStep} />}
