@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { ListItem, Chip, Popover, Typography } from '@mui/material'
+import { VerbToText } from '../../Data/defaults';
 
 interface Props {
   data: string;
@@ -9,9 +10,10 @@ interface Props {
   hover?: boolean;
   deleteFunc?: (data: string) => void
   selectFunc?: (data: string[], selected: boolean) => void
+  isTense?: boolean
 }
 
-const ItemChip = ({selectFunc, popperData, hover, select, data, withDelete, deleteFunc }: Props) => {
+const ItemChip = ({isTense, selectFunc, popperData, hover, select, data, withDelete, deleteFunc }: Props) => {
   const [selected, setSelected] = useState<boolean>(false)
 
   const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);
@@ -40,6 +42,7 @@ const ItemChip = ({selectFunc, popperData, hover, select, data, withDelete, dele
       <Chip
         aria-owns={open ? 'mouse-over-popover' : undefined}
         aria-haspopup="true"
+        size='small'
         onMouseEnter={hover ? handlePopoverOpen : undefined}
         onMouseLeave={hover ? handlePopoverClose : undefined}
         color={selected ? "warning" : "primary"}
@@ -67,7 +70,7 @@ const ItemChip = ({selectFunc, popperData, hover, select, data, withDelete, dele
       >
         {
           popperData.map((data, key) =>
-            <Typography key={key} sx={{ p: 1 }}>{data}</Typography>
+            <Typography key={key} sx={{ p: 1 }}>{isTense ? VerbToText[data as keyof typeof VerbToText] : data}</Typography>
           )
         }
       </Popover>}

@@ -5,6 +5,7 @@ import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import Checkbox from '@mui/material/Checkbox';
 import ItemChip from '../ListChip/ItemChip';
 import { StyledTextField } from './Styled';
+import { VerbToText } from '../../Data/defaults';
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;
@@ -15,9 +16,10 @@ interface Props {
   selectList: string[];
   placeholder: string;
   currentList: string[];
+  isTense?: boolean
 }
 
-const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList}: Props) => {
+const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList, isTense}: Props) => {
 
   return (
     <Autocomplete
@@ -42,7 +44,7 @@ const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList}
             style={{ marginRight: 8 }}
             checked={selected}
           />
-          {option}
+          {isTense ? VerbToText[option as keyof typeof VerbToText] : option}
         </li>
       )}
       renderInput={(params) => (

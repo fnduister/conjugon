@@ -36,6 +36,24 @@ export interface RaceGameInfo {
   stepTense: string;
 }
 
+export interface UpdateHeader {
+  update: boolean;
+  target: string;
+}
+
+export interface FindErrorGameInfo {
+  visibleWords: string[];
+  error: string;
+  stepTense: string;
+}
+
+export interface CompleteGameInfo {
+  visiblePronouns: string[];
+  stepVerb: string;
+  stepTable: string[];
+  stepTense: string;
+}
+
 export interface GameInfo {
   img: string;
   difficulty: string;
@@ -47,10 +65,12 @@ export interface GameInfo {
 }
 
 export interface OngoingGameInfo {
+  isOn: boolean
   maxStep: number;
   currentStep: number;
   maxTime: number;
   score: number;
+  maxScore: number;
 }
 
 export interface UserInfo {

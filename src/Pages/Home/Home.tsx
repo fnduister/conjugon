@@ -14,7 +14,7 @@ const Home = () => {
 
   const handleClick = (item: GameInfo) => {
     setCurrentGame(item)
-    navigate("/pregame/" + item.url)
+    navigate("/pregame/")
   }
   return (
     <ImageList

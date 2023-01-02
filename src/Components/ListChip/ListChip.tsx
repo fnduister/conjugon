@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Paper, ListItem, Chip } from '@mui/material';
+import { Paper, Chip, styled } from '@mui/material';
 import TagFacesIcon from '@mui/icons-material/TagFaces';
 import ItemChip from './ItemChip';
 import { GroupInfo } from '../../Data/interfaces';
@@ -9,13 +9,17 @@ interface Props {
   selectFunc: (data: string[], selected: boolean) => void
 }
 
+const ListItem = styled('li')(({ theme }) => ({
+  margin: theme.spacing(0.5),
+}));
+
 const ListChip = ({ chipData, selectFunc }: Props) => {
 
   return (
     <Paper
       sx={{
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-start',
         listStyle: 'none',
         flexWrap: 'wrap',
         p: 0.5,
@@ -27,7 +31,7 @@ const ListChip = ({ chipData, selectFunc }: Props) => {
       {chipData.map((data, key) => {
         return (
           <ListItem key={key} >
-            <ItemChip selectFunc={selectFunc} data={data.title} select hover popperData={data.data} />
+            <ItemChip isTense selectFunc={selectFunc} data={data.title} select hover popperData={data.data} />
           </ListItem>
         );
       })}

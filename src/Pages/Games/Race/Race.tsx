@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Button, Container, Typography } from '@mui/material';
+import { Button, Container, Typography, Avatar } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useRecoilValue, useRecoilState, useResetRecoilState } from 'recoil';
 import { currentTensesState, currentVerbsState, conjugationTables, ongoingGameState, tensesState, timerState } from './../../../Data/State';
-import { shuffle, randElement } from './../../../utils';
-import { d_pronouns } from '../../../Data/defaults'
-import { RaceGameInfo, Verb } from '../../../Data/interfaces';
+import { shuffle, randElement, findPronoun } from './../../../utils';
+import { d_pronouns, VerbToText } from '../../../Data/defaults'
+import { RaceGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces';
 import { Navigate, useNavigate } from 'react-router-dom';
 import ProgressBar from '../../../Components/ProgressBar/ProgressBar';
+import Score from '../Score/Score';
+import { useSpring, animated, config } from '@react-spring/web';
+import GameHeader from '../../../Components/GameHeader/GameHeader';
 
 interface Props {
   maxStep: number;
@@ -19,112 +22,169 @@ const Race = () => {
   const tenses = useRecoilValue(tensesState)
   const currentTenses = useRecoilValue(currentTensesState)
   const [ongoingGameInfo, setOngoingGameInfo] = useRecoilState(ongoingGameState)
-  const resetOngoingGameInfo = useResetRecoilState(ongoingGameState)
-  
   const [data, setData] = useState<RaceGameInfo[]>([])
-  const navigate = useNavigate()
   const [progress, setProgress] = useRecoilState(timerState)
+  const [showScore, setShowScore] = useState(false)
+  const [reset, setReset] = useState(true)
+  const [headerData, updateHeaderData] = useState<UpdateHeader>({ update: false, target: 'step' })
+  const AnimatedBox = animated(Box);
+
+  const [props, api] = useSpring(() => ({
+    background: 'white',
+    width: 300,
+    justifyContent: 'center',
+    display: 'flex',
+    padding: 5,
+    marginTop: 15,
+    alignItems: 'center',
+    height: 100,
+    config: config.molasses,
+  }))
+
 
   useEffect(() => {
-    resetOngoingGameInfo()
     if (currentVerbs.length > 0 && currentTenses.length > 0) {
-
-      const verbTables = tables.filter(table => currentVerbs.includes(table.infinitif))
-      let currentData = []
-      for (var i = 0; i < ongoingGameInfo.maxStep; i++) {
-        const stepTense: string = currentTenses[Math.floor(Math.random() * currentTenses.length)]
-        console.log('🚀 ~ useEffect ~ stepTense', stepTense);
-
-        // get the possible tenses, we want at least 2 of the tense selected and the reset is random
-        let visibleTenses: string[] = []
-        const leftTenses = tenses.filter(tense => !currentTenses.includes(tense))
-
-        if (currentTenses.length < 3) {
-          visibleTenses = [...currentTenses]
-          for (var j = 0; j < (3 - currentTenses.length); j++) {
-            visibleTenses.push(randElement(leftTenses, currentTenses.length))
-          }
-          visibleTenses = shuffle(visibleTenses)
-        } else {
-          console.log('🚀 ~ useEffect ~ currentTenses', currentTenses);
-          visibleTenses = shuffle(currentTenses).slice(0, 3)
-        }
-
-        const stepVerbTable: Verb = randElement(verbTables) as Verb
-        const vbs = stepVerbTable[stepTense as keyof Verb]
-        let stepPronounsPos = -1
-        let pronoun = ""
-        let word = ""
-        console.log('🚀 ~ useEffect ~ stepVerbTable', stepVerbTable);
-
-        if (vbs !== undefined) {
-          if (vbs instanceof Array) {
-            console.log("this is an array")
-            let maxxx = 0
-            do {
-              stepPronounsPos = Math.floor(Math.random() * 6)
-              pronoun = d_pronouns[stepPronounsPos][0]
-              word = vbs[stepPronounsPos]
-              maxxx += 1
-              console.log('🚀 ~ useEffect ~ maxxx', maxxx);
-            } while (word === "" && maxxx < 6)
-          } else {
-            word = vbs
-          }
-        }
-        console.log('🚀 ~ useEffect ~ word', word);
-        const stepInfo = {
-          pronoun,
-          word,
-          visibleTenses,
-          stepTense
-        }
-        // some code
-        currentData.push(stepInfo)
-      }
-      setData(currentData)
+      resetGame()
     }
-
     // const tensesTable = 
   }, [])
 
-  const nextStep = (guess?: string) => {
+  const resetGame = () => {
+    setOngoingGameInfo(prev => ({
+      ...prev, currentStep: 1, score: 0
+    }))
 
-    if (guess && guess === data[ongoingGameInfo.currentStep].stepTense) {
+    const verbTables = tables.filter(table => currentVerbs.includes(table.infinitif))
+    let currentData = []
+    let maxScore = 0
+    for (var i = 0; i < ongoingGameInfo.maxStep; i++) {
+      const stepTense: string = currentTenses[Math.floor(Math.random() * currentTenses.length)]
 
-      setOngoingGameInfo(prev => ({...prev, score: prev.score + 100}))
+      // get the possible tenses, we want at least 2 of the tense selected and the reset is random
+      let visibleTenses: string[] = []
+      const leftTenses = tenses.filter(tense => !currentTenses.includes(tense))
+
+      if (currentTenses.length < 3) {
+        visibleTenses = [...currentTenses]
+        for (var j = 0; j < (3 - currentTenses.length); j++) {
+          visibleTenses.push(randElement(leftTenses, currentTenses.length))
+        }
+        visibleTenses = shuffle(visibleTenses)
+      } else {
+        visibleTenses = shuffle(currentTenses).slice(0, 3)
+      }
+
+      const stepVerbTable: Verb = randElement(verbTables) as Verb
+      const vbs = stepVerbTable[stepTense as keyof Verb]
+      let stepPronounsPos = -1
+      let pronoun = ""
+      let word = ""
+
+      if (vbs !== undefined) {
+        if (vbs instanceof Array) {
+          console.log("this is an array")
+          let maxxx = 0
+          do {
+            stepPronounsPos = Math.floor(Math.random() * 6)
+            word = vbs[stepPronounsPos]
+            pronoun = findPronoun(word, stepPronounsPos)
+            maxxx += 1
+          } while (word === "" && maxxx < 6)
+        } else {
+          word = vbs
+        }
+      }
+      console.log('🚀 ~ useEffect ~ word', word);
+      const stepInfo = {
+        pronoun,
+        word,
+        visibleTenses,
+        stepTense
+      }
+      // some code
+      maxScore = maxScore + 1
+
+      currentData.push(stepInfo)
     }
-    if (ongoingGameInfo.currentStep >= ongoingGameInfo.maxStep - 1) {
-      setOngoingGameInfo(prev => ({ ...prev, currentStep: 1 }))
-      navigate("/pregame/race")      
+    setOngoingGameInfo(prev => ({ ...prev, maxScore: maxScore * 100 }))
+    console.log("🚀 ~ file: Race.tsx:113 ~ resetGame ~ currentData", currentData)
+    setData(currentData)
+  }
+
+  const updateHeader = (target: string) => {
+    updateHeaderData(prev => ({ update: !prev.update, target }))
+  }
+
+  const nextStep = (guess?: string) => {
+    updateHeader('step')
+    if (guess && guess === data[ongoingGameInfo.currentStep - 1].stepTense) {
+      updateHeader('score')
+      api.start({
+        from: {
+          background: 'green',
+          width: 330,
+          height: 130
+        },
+        to: {
+          background: 'white',
+          width: 300,
+          height: 100,
+        },
+      })
+      setOngoingGameInfo(prev => ({ ...prev, score: prev.score + 100 }))
     } else {
-      setOngoingGameInfo(prev => ({...prev, currentStep: prev.currentStep + 1}))
+      api.start({
+        from: {
+          background: 'red',
+          width: 330,
+          height: 130,
+        },
+        to: {
+          background: 'white',
+          width: 300,
+          height: 100,
+        },
+      })
+    }
+    if (ongoingGameInfo.currentStep >= ongoingGameInfo.maxStep) {
+      setOngoingGameInfo(prev => ({ ...prev, isOn: false }))
+      setShowScore(true)
+      setReset(false)
+    } else {
+      setOngoingGameInfo(prev => ({ ...prev, currentStep: prev.currentStep + 1 }))
     }
     setProgress(0)
     // setCurrentStep(prev => prev + 1)
+  }
+
+  const handleClose = () => {
+    setShowScore(false)
+    resetGame()
   }
 
   return (
     <>{
       data.length > 0 ?
         <>
-          <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-            <Box sx={{ w: 200, h: 50, background: 'white', p: 5, mt: 10, mb: 5 }} >
-              <Typography variant='body1' >{data[ongoingGameInfo.currentStep] && (data[ongoingGameInfo.currentStep].pronoun + " " + data[ongoingGameInfo.currentStep].word)}</Typography>
-            </Box>
+          <GameHeader update={headerData.update} target={headerData.target} />
+          <Container sx={{ display: 'flex', justifyContent: 'center', mt: 5, mb: 10 }}>
+            <AnimatedBox style={props}>
+              <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && (data[ongoingGameInfo.currentStep - 1].pronoun + " " + data[ongoingGameInfo.currentStep - 1].word)}</Typography>
+            </AnimatedBox>
           </Container>
-          <Container sx={{ display: 'flex', justifyContent: 'space-between', mt: 5, mb: 5 }}>
-            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep].visibleTenses[0])} sx={{ background: '#9EF2E8', color: 'black' }} variant='contained'>
-              {data[ongoingGameInfo.currentStep].visibleTenses[0]}
+          <Container sx={{ display: 'flex', justifyContent: 'center', mt: 5, mb: 5 }}>
+            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[0])} color="secondary" sx={{ m: 1 }} variant='contained'>
+              {data[ongoingGameInfo.currentStep - 1].visibleTenses[0]}
             </Button>
-            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep].visibleTenses[1])} sx={{ background: '#F5D2D2', color: 'black' }} variant='contained'>
-              {data[ongoingGameInfo.currentStep].visibleTenses[1]}
+            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[1])} color="secondary" sx={{ m: 1 }} variant='contained'>
+              {data[ongoingGameInfo.currentStep - 1].visibleTenses[1]}
             </Button>
-            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep].visibleTenses[2])} sx={{ background: '#E4DBFB', color: 'black' }} variant='contained'>
-              {data[ongoingGameInfo.currentStep].visibleTenses[2]}
+            <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[2])} color="secondary" sx={{ m: 1 }} variant='contained'>
+              {data[ongoingGameInfo.currentStep - 1].visibleTenses[2]}
             </Button>
           </Container>
-          <ProgressBar nextStep={nextStep} />
+          {!showScore && <ProgressBar nextStep={nextStep} />}
+          <Score open={showScore} handleClose={handleClose} />
         </> :
         <>
           No data

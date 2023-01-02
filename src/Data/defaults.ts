@@ -3,6 +3,44 @@ import order from '../Assets/imgs/order.jpg'
 import tables from '../Assets/imgs/tables.avif'
 import race from '../Assets/imgs/course.png'
 
+export const VerbToText = {
+  infinitif: "infinitif",
+  participePasse: "participe passé",
+  participePresent: "participe présent",
+  auxiliaire: "auxiliaire",
+  present: "présent",
+  imparfait: "imparfait",
+  passeSimple: "passé simple",
+  futurSimple: "futur simple",
+  plusQueParfait: "plus que parfait",
+  passeAnterieur: "passé antérieur",
+  futurAnterieur: "futur antérieur",
+  subjonctifPasse: "subjonctif passé",
+  imperatif: "imperatif",
+  passeCompose: "passé composé",
+  subjonctifPlusQueParfait: "subjonctif plus que parfait",
+  conditionnelPasse: "conditionnel passé",
+  subjonctifPresent: "subjonctif présent",
+  conditionnelPasseII: "subjonctif passé",
+  imperatifPasse: "imperatif passé",
+  conditionnelPresent: "conditionnel présent",
+  formePronominale: "forme pronominale",
+  subjonctifImparfait: "subjonctif imparfait",
+  formeNomPronomiale: "forme non pronomiale"
+}
+
+export const voyelles = ['e', 'o', 'y', 'a', 'i', 'u']
+
+export const d_game =   {
+  img: error,
+  title: "Trouver l'erreur",
+  difficulty: 'dure',
+  rows: 1,
+  cols: 1,
+  url: 'find-error',
+  featured: true,
+}
+
 export const d_games = [
   {
     img: error,
@@ -10,17 +48,16 @@ export const d_games = [
     difficulty: 'dure',
     rows: 1,
     cols: 1,
-    url: 'error',
+    url: 'find-error',
     featured: true,
   },
   {
     img: tables,
     title: 'Conjugaison en gros',
     difficulty: 'moyen',
-    author: '@rollelflex_graphy726',
     rows: 1,
     cols: 1,
-    url: 'all',
+    url: 'complete',
     featured: true,
   },
   {
@@ -32,15 +69,15 @@ export const d_games = [
     url: 'race',
     featured: false,
   },
-  {
-    img: order,
-    difficulty: 'trop dure',
-    title: 'Aventure',
-    rows: 1,
-    cols: 1,
-    url: 'order',
-    featured: false,
-  },
+  // {
+  //   img: order,
+  //   difficulty: 'trop dure',
+  //   title: 'Aventure',
+  //   rows: 1,
+  //   cols: 1,
+  //   url: 'order',
+  //   featured: false,
+  // },
 ];
 
 export const d_user = {
@@ -59,11 +96,21 @@ export const d_pronouns = [
   ['Ils/elles','Raf et Jade', 'Adam et Mael']
 ]
 
+export const speeds = [
+  {name: "très lent", value: 500},
+  {name: "lent", value: 275},
+  {name: "normal", value: 175},
+  {name: "rapide", value: 45},
+  {name: "très rapide", value: 10}
+]
+
 export const d_ongoingGame = {
   currentStep: 1,
-  maxStep: 8,
-  maxTime: .5,
-  score: 0
+  maxStep: 5,
+  maxTime: 175,
+  isOn: false,
+  score: 0,
+  maxScore: 1
 }
 
 export const d_customTenseGroups = [
@@ -78,15 +125,15 @@ export const d_presetTenseGroups = [
 ]
 
 export const d_customVerbGroups = [
-  { title: "semaine 1", data: ["courrir", "voler"] },
+  { title: "semaine 1", data: ["courir", "voler"] },
   { title: "semaine 2", data: ["permettre", "manger"] },
-  { title: "semaine 3", data: ["s'abatter", "se calmer"] },
+  { title: "semaine 3", data: ["s'abattre", "se calmer"] },
 ]
 
 export const d_presetVerbGroups = [
   { title: "facile", data: ["abattre", "danser"] },
   { title: "trop facile", data: ["avoir", "aller"] },
-  { title: "dure", data: ["s'abatter", "se calmer"] },
+  { title: "dure", data: ["s'abattre", "se calmer"] },
 ]
 
 export const tenses = []

@@ -1,7 +1,7 @@
 import { atom, selector } from 'recoil'
 import conjugation from './conjugation.json'
 import { GameInfo, GroupInfo, OngoingGameInfo, UserInfo, Verb } from './interfaces'
-import { d_customTenseGroups, d_customVerbGroups, d_games, d_ongoingGame, d_presetTenseGroups, d_presetVerbGroups, d_user } from './defaults';
+import { d_customTenseGroups, d_customVerbGroups, d_game, d_games, d_ongoingGame, d_presetTenseGroups, d_presetVerbGroups, d_user } from './defaults';
 
 export const games = atom({
   key: 'games',
@@ -42,7 +42,7 @@ export const ongoingGameState = atom({
 
 export const currentGameState = atom({
   key: 'currentGame',
-  default: {} as GameInfo
+  default: d_game as GameInfo
 })
 
 export const timerState = atom({

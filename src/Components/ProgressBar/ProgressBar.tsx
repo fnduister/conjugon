@@ -30,11 +30,10 @@ export default function LinearWithValueLabel({ nextStep }: Props) {
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-
       setProgress((prevProgress) => {
         return (prevProgress >= 100 ? 0 : prevProgress + 1);
       })
-    }, Math.floor(ongoingGameInfo.maxTime * 600));
+    }, Math.floor(ongoingGameInfo.maxTime));
     if (progress >= 100) { nextStep() }
     return () => {
       clearInterval(timer);
