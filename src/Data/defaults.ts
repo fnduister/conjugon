@@ -12,7 +12,7 @@ export const VerbToText = {
   imparfait: "imparfait",
   passeSimple: "passé simple",
   futurSimple: "futur simple",
-  plusQueParfait: "plus que parfait",
+  plusQueParfait: "plus-que-parfait",
   passeAnterieur: "passé antérieur",
   futurAnterieur: "futur antérieur",
   subjonctifPasse: "subjonctif passé",
@@ -124,8 +124,8 @@ export const d_customTenseGroups = [
 
 export const d_presetTenseGroups = [
   { title: "subjonctif", data: ["subjonctifPresent", "subjonctifPasse", "subjonctifImparfait"] },
-  { title: "Indicatif", data: ["Indicatif imparfait", "Indicatif plus-que-parfait", "Indicatif futur antérieur"] },
-  { title: "Conditionnel", data: ["Conditionnel présent", "Conditionnel passé"] },
+  { title: "Indicatif", data: ["imparfait", "plusQueParfait", "futurAnterieur"] },
+  { title: "Conditionnel", data: ["conditionnelPresent", "conditionnelPasse"] },
 ]
 
 export const d_customVerbGroups = [

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
 import GameHeader from '../../../Components/GameHeader/GameHeader'
 import ProgressBar from '../../../Components/ProgressBar/ProgressBar'
+import { VerbToText } from '../../../Data/defaults'
 import { FindErrorGameInfo, RaceGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces'
 import { currentVerbsState, conjugationTables, tensesState, currentTensesState, ongoingGameState, timerState } from '../../../Data/State'
 import { findPronoun, shuffle } from '../../../utils'
@@ -61,7 +62,6 @@ const FindError = () => {
             const errorConjuge = errorTable[errorTense as keyof Verb]
             console.log("🚀 ~ file: FindError.tsx:61 ~ resetGame ~ errorConjuge", errorConjuge)
             let error = ""
-            let errorPronoun = ""
             let pronounPos = 0
             if (errorConjuge !== undefined) {
                 do {
@@ -169,7 +169,7 @@ const FindError = () => {
                     <GameHeader update={headerData.update} target={headerData.target} />
                     <Container sx={{ display: 'flex', justifyContent: 'center', mt: 2, mb: 2 }}>
                         <AnimatedBox style={props}>
-                            <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && (data[ongoingGameInfo.currentStep - 1].stepTense)}</Typography>
+                            <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && VerbToText[data[ongoingGameInfo.currentStep - 1].stepTense as keyof typeof VerbToText]}</Typography>
                         </AnimatedBox>
                     </Container>
                     <Container sx={{ width: 500, flexWrap: 'wrap', display: 'flex', justifyContent: 'center', mt: 2, mb: 2 }}>

@@ -85,8 +85,9 @@ const Pregame = () => {
   return (
     <>
       <Typography sx={{ m: 0, mb: 2, ml: 3, fontWeight: 'bold' }} variant="h4">{currentGame.title}</Typography>
-      <Stack direction="row" spacing={2}
-        sx={{ display: 'flex', justifyContent: 'center' }}
+      <Stack spacing={2}
+        direction={{ xs: 'column', sm: 'row' }}
+        justifyContent='center'
         divider={<Divider orientation="vertical" sx={{ width: '5px' }} flexItem />}
       >
         <Container>
@@ -101,16 +102,16 @@ const Pregame = () => {
           <Typography variant="body1">Choisir les temps</Typography>
           <InputChip isTense selectList={getTenses()} changeFunc={handleChangeTense} placeholder='Le temps' deleteFunc={handleDeleteTense} currentList={currentTenses} />
           <Typography variant="body1">Sélectionne un groupe custom</Typography>
-          <ListChip chipData={currentCustomTenseGroups} selectFunc={handleSelectTense} />
+          <ListChip isTense chipData={currentCustomTenseGroups} selectFunc={handleSelectTense} />
           <Typography variant="body1">Sélectionne un groupe prédéfini</Typography>
-          <ListChip chipData={presetTenseGroups} selectFunc={handleSelectTense} />
+          <ListChip isTense chipData={presetTenseGroups} selectFunc={handleSelectTense} />
         </Container>
       </Stack>
-      <Container sx={{ mt: 2, display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: "space-between" }} maxWidth="xl">
-        <Box>
+      <Stack direction={{ xs: 'column', sm: 'row' }} spacing={{xs: 2, sm: 12, md: 28}} justifyContent="space-between" alignItems="center" sx={{margin: 3}}>
+        <Stack direction={{ xs: 'column', sm: 'row'}} sx={{width: "100%", maxWidth: 'sm'}} spacing={1}>
           {
             currentGame.url !== "complete" &&
-            <FormControl disabled={currentGame.url === 'complete'} sx={{ m: 0, mr: 1, minWidth: 120 }}>
+            <FormControl disabled={currentGame.url === 'complete'} sx={{ m: 0, mr: 1, minWidth: 120, width: '100%' }}>
               <InputLabel id="step-max-label">Nombre de rondes</InputLabel>
               <Select
                 sx={{ background: 'white', height: 40 }}
@@ -127,8 +128,8 @@ const Pregame = () => {
               {/* <FormHelperText>With label + helper text</FormHelperText> */}
             </FormControl>
           }
-          <FormControl sx={{ m: 0, minWidth: 120 }}>
-            <InputLabel id="step-max-label">Vitesse</InputLabel>
+          <FormControl sx={{ m: 0, minWidth: 120, width: '100%' }}>
+            <InputLabel variant="filled" id="step-max-label">Vitesse</InputLabel>
             <Select
               sx={{ background: 'white', height: 40 }}
               labelId="speed-label"
@@ -142,11 +143,11 @@ const Pregame = () => {
             </Select>
             {/* <FormHelperText>With label + helper text</FormHelperText> */}
           </FormControl>
-        </Box>
-        <Button disabled={canAdvance()} sx={{ height: '40px' }} component={Link} to={"/games/" + currentGame.url} variant="contained" color="warning">
+        </Stack>
+        <Button disabled={canAdvance()} size='large' component={Link} to={"/games/" + currentGame.url} variant="contained" color="warning">
           Travaller
         </Button>
-      </Container>
+      </Stack>
     </>
   )
 }

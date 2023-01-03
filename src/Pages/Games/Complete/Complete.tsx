@@ -1,10 +1,11 @@
-import { Box, Button, Container, TextField, Typography } from '@mui/material'
+import { Box, Button, Container, Grid, Typography } from '@mui/material'
 import { animated, config, useSpring } from '@react-spring/web'
 import React, { useEffect, useState } from 'react'
 import { useRecoilValue, useRecoilState } from 'recoil'
 import GameHeader from '../../../Components/GameHeader/GameHeader'
 import ProgressBar from '../../../Components/ProgressBar/ProgressBar'
-import { CompleteGameInfo, FindErrorGameInfo, RaceGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces'
+import { VerbToText } from '../../../Data/defaults'
+import { CompleteGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces'
 import { currentVerbsState, conjugationTables, tensesState, currentTensesState, ongoingGameState, timerState } from '../../../Data/State'
 import { findPronoun, shuffle } from '../../../utils'
 import Score from '../Score/Score'
@@ -160,20 +161,27 @@ const Complete = () => {
                         </Box>
                         <Box sx={{ display: 'flex', alignItems: 'center', m: 2 }}>
                             <Typography variant='body1' sx={{ fontWeight: 'bold' }} >Temps:  </Typography>
-                            <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && (data[ongoingGameInfo.currentStep - 1].stepTense)}</Typography>
+                            <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && VerbToText[data[ongoingGameInfo.currentStep - 1].stepTense as keyof typeof VerbToText]}</Typography>
                         </Box>
                     </Container>
-                    <Container maxWidth='lg' sx={{ flexWrap: 'wrap', height: 300, flexDirection: 'column', display: 'flex', alignItems: 'center', justifyContent: 'center', mt: 2, mb: 2 }}>
+                    <Grid container spacing={2} sx={{m: 2, justifyContent: 'center'}}>
                         {data[ongoingGameInfo.currentStep - 1].visiblePronouns.map((pronoun, pos) => {
                             if (pronoun !== "") {
-                                return <Box key={pos} sx={{ display: 'flex', m: 1, alignItems: 'center', justifyContent: 'center', width: 300 }}>
+                              return <Grid item key={pos} xs={8} sm={6}>
                                     {/* <Typography>{pronoun}</Typography> */}
-                                    <Input value={correction[pos].value} onChange={(e: any) => handleValueChange(e, pos)} correction={correction[pos].check ? '#caffbf' : '#ffadad'} showresult={showResult} id="filled-basic" label={pronoun} variant="filled" />
-                                </Box>
-                            } else return
+                                  <Input
+                                    value={correction[pos].value} 
+                                    onChange={(e: any) => handleValueChange(e, pos)} 
+                                    correction={correction[pos].check ? '#caffbf' : '#ffadad'} 
+                                    showresult={showResult} 
+                                    id="filled-basic" 
+                                    label={pronoun}
+                                    variant="filled"
+                                  />
+                                </Grid>
+                            } else return ""
                         })}
-
-                    </Container>
+                    </Grid>
 
                     <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                         <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>

@@ -27,7 +27,7 @@ const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList,
       getOptionLabel={(option) => option}
       renderTags={(value: readonly string[], getTagProps) =>
         value.map((option: string, index: number) => (
-          <ItemChip isTense={isTense} key={index} data={option} withDelete deleteFunc={deleteFunc}/>
+          <ItemChip isTense key={index} data={option} withDelete deleteFunc={deleteFunc}/>
         ))
       }
 

@@ -37,6 +37,14 @@ const ItemChip = ({isTense, selectFunc, popperData, hover, select, data, withDel
 
   const open = Boolean(anchorEl);
 
+  const getData = (data: string) => {
+    if (isTense) {
+      if (data in VerbToText) {
+        return VerbToText[data as keyof typeof VerbToText]
+      }else return data
+    }else return data
+  }
+
   return (
     <>
       <Chip
@@ -46,7 +54,7 @@ const ItemChip = ({isTense, selectFunc, popperData, hover, select, data, withDel
         onMouseEnter={hover ? handlePopoverOpen : undefined}
         onMouseLeave={hover ? handlePopoverClose : undefined}
         color={selected ? "warning" : "primary"}
-        label={data}
+        label={getData(data)}
         onClick={select ? handleClick : undefined}
         onDelete={(withDelete && deleteFunc) ? (e: any) => deleteFunc(data) : undefined}
       />
