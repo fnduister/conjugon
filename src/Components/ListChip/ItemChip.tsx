@@ -27,7 +27,6 @@ const ItemChip = ({isTense, selectFunc, popperData, hover, select, data, withDel
   };
 
   const handleClick = () => {
-    console.log("what?")
     setSelected(!selected)
     
     if (selectFunc && popperData) {

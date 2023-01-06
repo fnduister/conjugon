@@ -1,11 +1,11 @@
-import React from 'react'
-import { IconButton, ImageList, ImageListItem, ImageListItemBar } from '@mui/material'
-
+import React, { useEffect } from 'react';
+import { IconButton, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
 import InfoIcon from '@mui/icons-material/Info';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import { currentGameState, games } from '../../Data/State'
 import { GameInfo } from '../../Data/interfaces';
 import { useNavigate } from 'react-router-dom';
+import useSound from 'use-sound';
 
 const Home = () => {
   const currentGames = useRecoilValue(games)
@@ -16,12 +16,13 @@ const Home = () => {
     setCurrentGame(item)
     navigate("/pregame/")
   }
+
   return (
     <ImageList
       rowHeight={50}
       sx={{
         mb: 4,
-        gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))!important'
+        gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))!important'
       }}
       cols={3} gap={10}>
       {currentGames.map((item: GameInfo) => (

@@ -29,8 +29,6 @@ class ErrorBoundary extends Component<Props, State> {
 
 
   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    console.log("🚀 ~ file: ErrorBoundary.tsx:23 ~ ErrorBoundary ~ componentDidCatch ~ ErrorInfo", errorInfo)
-    console.log("🚀 ~ file: ErrorBoundary.tsx:23 ~ ErrorBoundary ~ componentDidCatch ~ Error", Error)
     console.error("Uncaught error:", error, errorInfo);
   }
 

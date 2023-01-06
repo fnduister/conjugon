@@ -3,6 +3,8 @@ import order from '../Assets/imgs/order.jpg'
 import tables from '../Assets/imgs/tables.avif'
 import race from '../Assets/imgs/course.png'
 
+import { SpriteMap } from 'use-sound/dist/types';
+
 export const VerbToText = {
   infinitif: "infinitif",
   participePasse: "participe passé",
@@ -28,6 +30,66 @@ export const VerbToText = {
   subjonctifImparfait: "subjonctif imparfait",
   formeNomPronomiale: "forme non pronomiale"
 }
+
+export const positifEndgameSpriteMap: SpriteMap = {
+  'ss1': [0, 3000],
+  'ss2': [3000, 3000],
+  'ss3': [6000, 3000],
+  'ss4': [12000, 3000],
+  'ss5': [15000, 3000],
+  'ss6': [18000, 3000],
+  'ss7': [21000, 3000],
+  'ss8': [24000, 3000],
+  'ss9': [27000, 3000],
+  'ss10': [30000, 3000]
+};
+
+export const positifEndgameKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7', 'ss8', 'ss9', 'ss10']
+
+export const negatifEndgameSpriteMap: SpriteMap = {
+  'ss1': [0, 3000],
+  'ss2': [3000, 3000],
+  'ss3': [6000, 3000],
+  'ss4': [9000, 3000],
+  'ss9': [12000, 3000],
+  'ss5': [15000, 3000],
+  'ss6': [18000, 3000],
+  'ss7': [21000, 3000],
+  'ss8': [24000, 3000],
+  'ss10': [27000, 3000],
+  'ss11': [30000, 3000],
+};
+
+export const negatifEndgameKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7', 'ss8', 'ss9', 'ss10', 'ss11']
+
+export const positifSpriteMap: SpriteMap = {
+  'ss1': [0, 2000],
+  'ss2': [3000, 2000],
+  'ss3': [6000, 2000],
+  'ss4': [12000, 2000],
+  'ss5': [15000, 2000],
+  'ss6': [18000, 2000],
+  'ss7': [21000, 2000],
+  'ss8': [27000, 2000],
+  'ss9': [33000, 2000],
+  'ss10': [36000, 2000],
+  'ss11': [42000, 2000],
+  'ss12': [48000, 2000]
+};
+
+export const positifKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7', 'ss8', 'ss9', 'ss10', 'ss11', 'ss12']
+
+export const negatifSpriteMap:SpriteMap = {
+  'ss1': [0, 1500],
+  'ss2': [1500, 1500],
+  'ss7': [3000, 1500],
+  'ss3': [4500, 1500],
+  'ss4': [6000, 1500],
+  'ss5': [7500, 1500],
+  'ss6': [9000, 1500],
+};
+
+export const negatifKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7']
 
 export const voyelles = ['e', 'o', 'y', 'a', 'i', 'u']
 

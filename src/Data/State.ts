@@ -24,7 +24,6 @@ export const tensesState = selector<string[]>({
 export const verbsState = selector<string[]>({
   key: 'verbsState', // unique ID (with respect to other atoms/selectors)
   get: ({ get }) => {
-    console.log("getting again")
     const verbTables: Verb[] = get(conjugationTables);
     return verbTables.map((verb) => verb.infinitif.normalize('NFD'))
   },

@@ -1,8 +1,7 @@
 import React from 'react'
-import { Autocomplete, createFilterOptions } from '@mui/material';
+import { Autocomplete } from '@mui/material';
 import ItemChip from '../ListChip/ItemChip';
 import { StyledTextField } from './Styled';
-import { VerbToText } from '../../Data/defaults';
 
 interface Props {
   deleteFunc:(data: string) => void;
@@ -23,7 +22,6 @@ const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList,
       value={currentList}
       sx={{mb: 3}}
       onChange={(e: any, newValue) => changeFunc(newValue)}
-      disableCloseOnSelect
       getOptionLabel={(option) => option}
       renderTags={(value: readonly string[], getTagProps) =>
         value.map((option: string, index: number) => (
@@ -32,7 +30,7 @@ const InputChip = ({placeholder, deleteFunc,changeFunc, selectList, currentList,
       }
 
       renderInput={(params) => (
-        <StyledTextField {...params} label={placeholder} placeholder={placeholder}
+        <StyledTextField {...params} label={placeholder} placeholder={placeholder} variant="filled"
         />
       )}
     />

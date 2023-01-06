@@ -5,7 +5,6 @@ import BreadCrumbsItem from './BreadCrumbsItem';
 
 const MyBreadcrumbs = () => {
     let matches = useMatches();
-    console.log("🚀 ~ file: Breadcrumbs.tsx:6 ~ Breadcrumbs ~ matches", matches)
     let crumbs = matches
         // first get rid of any matches that don't have handle and crumb
         .filter((match) => match.handle !== undefined)

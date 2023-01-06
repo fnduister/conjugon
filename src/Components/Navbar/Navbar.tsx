@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -14,6 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../../Assets/imgs/android-chrome-192x192.png'
 import { Link } from 'react-router-dom';
+import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import VolumeMuteIcon from '@mui/icons-material/VolumeMute';
 
 const pages = ['Tables', 'Jeux', 'Aventure'];
 const settings = ['Dashboard', 'Logout'];
@@ -36,6 +38,10 @@ function ResponsiveAppBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+
+  const handleClickSound = () => {
+
+  }
 
   return (
     <AppBar position="static" sx={{ background: "#0093d5" }} >
@@ -128,6 +134,7 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
+          {/* <Stack> */}
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
@@ -158,6 +165,20 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          {/* <Box>
+            <IconButton
+              size="large"
+              ref={soundRef}
+              aria-label="show more"
+              aria-controls="{mobileMenuId}"
+              aria-haspopup="true"
+              onClick={() => (toggleAudi as (() => void))()}
+              color="inherit"
+            >
+              {playingSound ? <VolumeUpIcon /> : <VolumeMuteIcon />}
+            </IconButton>
+          </Box> */}
+          {/* </Stack> */}
         </Toolbar>
       </Container>
     </AppBar>

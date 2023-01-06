@@ -6,7 +6,7 @@ export const StyledContainer = styled(Container)`
 `
 
 export const MainContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   background: #9fb1bc;
 `
 export const StyledPaper = styled(Paper)`

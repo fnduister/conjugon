@@ -8,6 +8,8 @@
 # testing
 /coverage
 
+/src/Assets/New folder
+
 # production
 /build
 firebase-tools-instant-win.exe

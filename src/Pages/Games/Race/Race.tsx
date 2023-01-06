@@ -1,23 +1,43 @@
 import React, { useState, useEffect } from 'react'
-import { Button, Container, Typography } from '@mui/material';
+import { Stack, Button, Container, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useRecoilValue, useRecoilState } from 'recoil';
 import { currentTensesState, currentVerbsState, conjugationTables, ongoingGameState, tensesState, timerState } from './../../../Data/State';
 import { shuffle, randElement, findPronoun } from './../../../utils';
-import { VerbToText } from '../../../Data/defaults'
 import { RaceGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces';
 import ProgressBar from '../../../Components/ProgressBar/ProgressBar';
 import Score from '../Score/Score';
 import { useSpring, animated, config } from '@react-spring/web';
 import GameHeader from '../../../Components/GameHeader/GameHeader';
+import {
+  negatifKeys,
+  negatifSpriteMap,
+  negatifEndgameSpriteMap,
+  negatifEndgameKeys,
+  positifEndgameSpriteMap,
+  positifSpriteMap,
+  positifEndgameKeys,
+  positifKeys,
+  VerbToText
+} from '../../../Data/defaults'
+import negatifEndgame from '../../../Assets/interactif/negatifEndgame_mixdown.mp3'
+import positifEndgame from '../../../Assets/interactif/positifEndgame_mixdown.mp3'
+import negatif from '../../../Assets/interactif/negatif1.mp3'
+import positif from '../../../Assets/interactif/positif1_mixdown.mp3'
+import useSound from 'use-sound';
+import { SpriteMap } from 'use-sound/dist/types';
 
-interface Props {
-  maxStep: number;
-}
 
 const Race = () => {
   const currentVerbs = useRecoilValue(currentVerbsState)
   const tables = useRecoilValue(conjugationTables)
+  // const [positifAudio, togglePositifAudio] = useAudio(positifIngame1)
+  // const [playingSound, toggleAudi] = useAudio(audi)
+  const [playNegatifSound] = useSound(negatif, { interrupt: true, sprite: negatifSpriteMap as SpriteMap })
+  const [playPositifSound] = useSound(positif, { interrupt: true, sprite: positifSpriteMap as SpriteMap })
+  const [playNegatifEndgameSound] = useSound(negatifEndgame, { interrupt: true, sprite: negatifEndgameSpriteMap as SpriteMap} )
+  const [playPositifEndgameSound] = useSound(positifEndgame, { interrupt: true, sprite: positifEndgameSpriteMap as SpriteMap} )
+
   const tenses = useRecoilValue(tensesState)
   const currentTenses = useRecoilValue(currentTensesState)
   const [ongoingGameInfo, setOngoingGameInfo] = useRecoilState(ongoingGameState)
@@ -48,19 +68,27 @@ const Race = () => {
     // const tensesTable = 
   }, [])
 
+  const showScoreOverlay = () => {
+    setOngoingGameInfo(prev => ({ ...prev, isOn: false }))
+    if (Math.floor(ongoingGameInfo.score / ongoingGameInfo.maxScore * 100) > 50) {
+      playPositifEndgameSound({id: randElement(positifEndgameKeys)})
+    } else {
+      playNegatifEndgameSound({id: randElement(negatifEndgameKeys)})
+    }
+    setShowScore(true)
+    setReset(false)
+  }
+
   const resetGame = () => {
     setOngoingGameInfo(prev => ({
       ...prev, currentStep: 1, score: 0
     }))
 
     const verbTables = tables.filter(table => currentVerbs.includes(table.infinitif))
-    console.log('🚀 ~ resetGame ~ currentVerbs', currentVerbs);
-    console.log('🚀 ~ resetGame ~ verbTables', verbTables);
     let currentData = []
     let maxScore = 0
     for (var i = 0; i < ongoingGameInfo.maxStep; i++) {
       const stepTense: string = currentTenses[Math.floor(Math.random() * currentTenses.length)]
-      console.log('🚀 ~ resetGame ~ stepTense', stepTense);
 
       // get the possible tenses, we want at least 2 of the tense selected and the reset is random
       let visibleTenses: string[] = []
@@ -75,19 +103,15 @@ const Race = () => {
       } else {
         visibleTenses = shuffle(currentTenses).slice(0, 3)
       }
-      console.log('🚀 ~ resetGame ~ visibleTenses', visibleTenses);
 
       const stepVerbTable: Verb = randElement(verbTables) as Verb
-      console.log('🚀 ~ resetGame ~ stepVerbTable', stepVerbTable);
       const vbs = stepVerbTable[stepTense as keyof Verb]
-      console.log('🚀 ~ resetGame ~ vbs', vbs);
       let stepPronounsPos = -1
       let pronoun = ""
       let word = ""
 
       if (vbs !== undefined) {
         if (vbs instanceof Array) {
-          console.log("this is an array")
           let maxxx = 0
           do {
             stepPronounsPos = Math.floor(Math.random() * 6)
@@ -99,7 +123,6 @@ const Race = () => {
           word = vbs
         }
       }
-      console.log('🚀 ~ useEffect ~ word', word);
       const stepInfo = {
         pronoun,
         word,
@@ -112,7 +135,6 @@ const Race = () => {
       currentData.push(stepInfo)
     }
     setOngoingGameInfo(prev => ({ ...prev, maxScore: maxScore * 100 }))
-    console.log("🚀 ~ file: Race.tsx:113 ~ resetGame ~ currentData", currentData)
     setData(currentData)
   }
 
@@ -123,7 +145,8 @@ const Race = () => {
   const nextStep = (guess?: string) => {
     updateHeader('step')
     if (guess && guess === data[ongoingGameInfo.currentStep - 1].stepTense) {
-      updateHeader('score')
+      playPositifSound({ id: randElement(positifKeys) })
+      updateHeader('score');
       api.start({
         from: {
           background: 'green',
@@ -138,6 +161,7 @@ const Race = () => {
       })
       setOngoingGameInfo(prev => ({ ...prev, score: prev.score + 100 }))
     } else {
+      playNegatifSound({ id: randElement(negatifKeys) })
       api.start({
         from: {
           background: 'red',
@@ -152,9 +176,7 @@ const Race = () => {
       })
     }
     if (ongoingGameInfo.currentStep >= ongoingGameInfo.maxStep) {
-      setOngoingGameInfo(prev => ({ ...prev, isOn: false }))
-      setShowScore(true)
-      setReset(false)
+      setTimeout(() => { showScoreOverlay() }, 1500);
     } else {
       setOngoingGameInfo(prev => ({ ...prev, currentStep: prev.currentStep + 1 }))
     }
@@ -177,7 +199,7 @@ const Race = () => {
               <Typography variant='body1' >{data[ongoingGameInfo.currentStep - 1] && (data[ongoingGameInfo.currentStep - 1].pronoun + " " + data[ongoingGameInfo.currentStep - 1].word)}</Typography>
             </AnimatedBox>
           </Container>
-          <Container sx={{ display: 'flex', justifyContent: 'center', mt: 5, mb: 5 }}>
+          <Stack justifyContent='center' alignItems='center' direction={{ xs: "column", sm: 'row' }}>
             <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[0])} color="secondary" sx={{ m: 1 }} variant='contained'>
               {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[0] as keyof typeof VerbToText]}
             </Button>
@@ -187,7 +209,7 @@ const Race = () => {
             <Button onClick={() => nextStep(data[ongoingGameInfo.currentStep - 1].visibleTenses[2])} color="secondary" sx={{ m: 1 }} variant='contained'>
               {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[2] as keyof typeof VerbToText]}
             </Button>
-          </Container>
+          </Stack>
           {!showScore && <ProgressBar nextStep={nextStep} />}
           <Score open={showScore} handleClose={handleClose} />
         </> :
