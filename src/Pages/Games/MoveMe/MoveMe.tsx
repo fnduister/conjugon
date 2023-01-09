@@ -43,7 +43,7 @@ const MoveMe = () => {
   const [headerData, updateHeaderData] = useState<UpdateHeader>({ update: false, target: 'step' })
   const [playNegatifEndgameSound] = useSound(negatifEndgame, { interrupt: true, sprite: negatifEndgameSpriteMap })
   const [playPositifEndgameSound] = useSound(positifEndgame, { interrupt: true, sprite: positifEndgameSpriteMap })
-
+  const [paused, setPaused] = useState(false)
   const moveItem = (item: VerbProps, newPos: number) => {
     let modifiedWords = data[ongoingGameInfo.currentStep - 1].stepTable.map((ele, i) => {
       if (i === newPos) {
@@ -145,6 +145,7 @@ const MoveMe = () => {
   const nextStep = (guess?: string) => {
     updateHeader('step')
     getCorrection()
+    setPaused(true)
     setShowResult(true)
     updateHeader('score')
 
@@ -156,6 +157,7 @@ const MoveMe = () => {
       } else {
         setOngoingGameInfo(prev => ({ ...prev, currentStep: prev.currentStep + 1 }))
       }
+      setPaused(false)
       setProgress(0)
     }, 2000);
     // setCurrentStep(prev => prev + 1)
@@ -218,7 +220,7 @@ const MoveMe = () => {
             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>
             </Box>
-            {!showScore && <ProgressBar nextStep={nextStep} />}
+            {!showScore && <ProgressBar  paused={paused} nextStep={nextStep} />}
             <Score open={showScore} handleClose={handleClose} />
           </> :
           <Typography> No Data </Typography>
