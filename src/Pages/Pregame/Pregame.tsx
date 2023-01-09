@@ -21,8 +21,6 @@ const Pregame = () => {
   const currentGame = useRecoilValue(currentGameState)
   const [ongoingGameInfo, setOngoingGameInfo] = useRecoilState(ongoingGameState)
   useEffect(() => {
-    // setCurrentVerbs([])
-    // setCurrentTenses([])
     if (![5, 10, 15].includes(ongoingGameInfo.maxStep)) {
       setOngoingGameInfo(prev => ({ ...prev, maxStep: 5 }))
     }

@@ -11,6 +11,7 @@ import BreadCrumbsItem from './Components/Breadcrumbs/BreadCrumbsItem';
 import FindError from './Pages/Games/FindError/FindError';
 import Complete from './Pages/Games/Complete/Complete';
 import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
+import MoveMe from './Pages/Games/MoveMe/MoveMe';
 
 
 export const router = createBrowserRouter([
@@ -28,8 +29,8 @@ export const router = createBrowserRouter([
         path: "/pregame",
         element: <ErrorBoundary>
 
-        <Pregame />
-      </ErrorBoundary>,
+          <Pregame />
+        </ErrorBoundary>,
         handle: { crumb: { name: "Pregame", path: "/pregame" } },
       },
       {
@@ -50,17 +51,26 @@ export const router = createBrowserRouter([
             path: "/games/find-error",
             element: <ErrorBoundary>
 
-            <FindError />
-          </ErrorBoundary>,
+              <FindError />
+            </ErrorBoundary>,
             handle: { crumb: { name: "Trouve l'erreur", path: "/games/find-error" } },
           },
           {
             path: "/games/complete",
             element: <ErrorBoundary>
 
-            <Complete />
-          </ErrorBoundary>,
+              <Complete />
+            </ErrorBoundary>,
             handle: { crumb: { name: "Complete", path: "/games/complete" } },
+
+          },
+          {
+            path: "/games/move-me",
+            element: <ErrorBoundary>
+
+              <MoveMe />
+            </ErrorBoundary>,
+            handle: { crumb: { name: "Bouge moi", path: "/games/move-me" } },
           }
         ]
       },

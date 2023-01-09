@@ -40,3 +40,29 @@ export const findPronoun = (word: string, pronounPos: number) => {
     }
   } else return ""
 }
+
+const getRacine = (table: string[]): string => {
+  const words: string[] = []
+  table.forEach(ele => {
+    if (ele !== "") {
+      words.push(ele.split(" ")[0])
+    }
+  })
+  if (table[0].split(" ").length < 2) {
+    let racine = words[0]
+    for (var j = 1; j < words.length; j++) {
+            let tempRacine = ""
+
+      for (var i = 0; i < racine.length; i++) {
+        if (words[j][i] === racine[i]) {
+          tempRacine += racine[i]
+        } else {
+          racine = tempRacine
+          break
+        }
+      }
+    }
+    return racine
+  }
+  return ""
+} 

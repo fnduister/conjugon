@@ -131,15 +131,16 @@ export const d_games = [
     url: 'race',
     featured: false,
   },
-  // {
-  //   img: order,
-  //   difficulty: 'trop dure',
-  //   title: 'Aventure',
-  //   rows: 1,
-  //   cols: 1,
-  //   url: 'order',
-  //   featured: false,
-  // },
+
+  {
+    img: order,
+    difficulty: 'trop dure',
+    title: 'Bouge moi',
+    rows: 1,
+    cols: 1,
+    url: 'move-me',
+    featured: false,
+  },
 ];
 
 export const d_user = {

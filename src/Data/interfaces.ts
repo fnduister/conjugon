@@ -54,6 +54,20 @@ export interface CompleteGameInfo {
   stepTense: string;
 }
 
+
+export interface VerbProps {
+  pos: number,
+  name: string
+}
+
+export interface MoveMeGameInfo {
+  visiblePronouns: string[];
+  stepVerb: string;
+  correction: string[];
+  stepTable: VerbProps[];
+  stepTense: string;
+}
+
 export interface GameInfo {
   img: string;
   difficulty: string;
