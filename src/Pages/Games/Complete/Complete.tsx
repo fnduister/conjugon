@@ -199,7 +199,7 @@ const Complete = () => {
           <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
             <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>
           </Box>
-          {!showScore && <ProgressBar nextStep={nextStep} />}
+          {(!showScore && ongoingGameInfo.maxTime !== 0 ) && <ProgressBar nextStep={nextStep} />}
           <Score open={showScore} handleClose={handleClose} />
         </> :
         <>

@@ -160,6 +160,7 @@ export const d_pronouns = [
 ]
 
 export const speeds = [
+  {name: "aucun", value: 0},
   {name: "très lent", value: 500},
   {name: "lent", value: 275},
   {name: "normal", value: 175},

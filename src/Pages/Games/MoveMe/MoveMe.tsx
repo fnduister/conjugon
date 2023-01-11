@@ -1,5 +1,12 @@
-import { DndProvider } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
+import {
+  MouseSensor,
+  closestCenter,
+  DndContext,
+  DragEndEvent,
+  TouchSensor,
+  useSensor,
+  useSensors
+} from '@dnd-kit/core'
 import { DropItem } from './DropItem';
 import DropArea from './DropArea';
 import { MoveMeGameInfo, VerbProps } from './../../../Data/interfaces';
@@ -25,6 +32,13 @@ import useSound from 'use-sound';
 import negatifEndgame from '../../../Assets/interactif/negatifEndgame_mixdown.mp3'
 import positifEndgame from '../../../Assets/interactif/positifEndgame_mixdown.mp3'
 import { typography } from '@mui/system';
+import {
+  horizontalListSortingStrategy,
+  rectSortingStrategy,
+  rectSwappingStrategy,
+  SortableContext,
+  verticalListSortingStrategy
+} from '@dnd-kit/sortable';
 
 const MoveMe = () => {
   const [data, setData] = useState<MoveMeGameInfo[]>([])
@@ -44,21 +58,25 @@ const MoveMe = () => {
   const [playNegatifEndgameSound] = useSound(negatifEndgame, { interrupt: true, sprite: negatifEndgameSpriteMap })
   const [playPositifEndgameSound] = useSound(positifEndgame, { interrupt: true, sprite: positifEndgameSpriteMap })
   const [paused, setPaused] = useState(false)
-  const moveItem = (item: VerbProps, newPos: number) => {
-    let modifiedWords = data[ongoingGameInfo.currentStep - 1].stepTable.map((ele, i) => {
-      if (i === newPos) {
-        return { pos: ele.pos, name: item.name }
-      } else if (i === item.pos) {
-        return { pos: item.pos, name: data[ongoingGameInfo.currentStep - 1].stepTable[newPos].name }
-      }
-      return ele
-    });
-    const lmodifiedWords = data.map((ele, i) => {
-      if (ongoingGameInfo.currentStep - 1 === i) {
-        return { ...ele, stepTable: modifiedWords }
-      } return ele
-    })
-    setData(lmodifiedWords)
+  const mouseSensor = useSensor(MouseSensor); // Initialize mouse sensor
+  const touchSensor = useSensor(TouchSensor); // Initialize touch sensor
+  const sensors = useSensors(mouseSensor, touchSensor)
+  
+  const handleDragEnd = (event: DragEndEvent) => {
+    // let modifiedWords = data[ongoingGameInfo.currentStep - 1].stepTable.map((ele, i) => {
+    //   if (i === newPos) {
+    //     return { pos: ele.pos, name: item.name }
+    //   } else if (i === item.pos) {
+    //     return { pos: item.pos, name: data[ongoingGameInfo.currentStep - 1].stepTable[newPos].name }
+    //   }
+    //   return ele
+    // });
+    // const lmodifiedWords = data.map((ele, i) => {
+    //   if (ongoingGameInfo.currentStep - 1 === i) {
+    //     return { ...ele, stepTable: modifiedWords }
+    //   } return ele
+    // })
+    // setData(lmodifiedWords)
   }
 
   useEffect(() => {
@@ -97,10 +115,11 @@ const MoveMe = () => {
             shuffle(stepTable).forEach((ele, pos) => {
               finishingTable.push({ pos, name: ele })
             })
+            console.log('🚀 ~ shuffle ~ finishingTable', finishingTable);
 
             const stepInfo = {
               stepVerb,
-              stepTable: finishingTable,
+              stepTable: shuffle(finishingTable),
               correction: stepTable,
               visiblePronouns,
               stepTense
@@ -174,6 +193,7 @@ const MoveMe = () => {
     setReset(false)
   }
 
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   return (
     <>
       {
@@ -182,45 +202,31 @@ const MoveMe = () => {
             <GameHeader update={headerData.update} target={headerData.target} />
 
             <Stack>
-              <DndProvider backend={HTML5Backend}>
-                {data[ongoingGameInfo.currentStep - 1].stepTable.map(
-                  (verb, i) => {
-                    if (data[ongoingGameInfo.currentStep - 1].visiblePronouns[i] !== '') {
 
-                      const secondPart = verb.name.split(" ")[1]
-                      return <Stack
-                        direction={{ xs: 'column', sm: 'row' }}
-                        sx={{ m: 2, flexWrap: 'wrap', maxWidth: 'md' }}
-                        alignItems='center'
-                        justifyContent='space-between'
-                        key={i}
-                      >
-                        <Typography>
-                          {data[ongoingGameInfo.currentStep - 1].visiblePronouns[i]}
-                        </Typography>
-                        <DropArea
-                          item={verb}
-                          truth={data[ongoingGameInfo.currentStep - 1].correction[i]}
-                          itemType='verb'
-                          moveItem={moveItem}
-                          showResult={showResult}
-                          id={i}
-                        />
-                        {secondPart &&
-                          <Typography>
-                            {secondPart}
-                          </Typography>}
-                      </Stack>
-                    } else return ""
-                  })}
+              <DndContext
+                collisionDetection={closestCenter}
+                onDragEnd={handleDragEnd}
+                sensors={sensors}
+              >
+                <SortableContext
+                  items={data[ongoingGameInfo.currentStep - 1].stepTable.map((ele) => ele.pos)}
+                  strategy={rectSortingStrategy}
+                >
+                  {data[ongoingGameInfo.currentStep - 1].stepTable.map(
+                    (verb, i) => {
+                      if (data[ongoingGameInfo.currentStep - 1].visiblePronouns[i] !== '') {
+                        return <DropItem id={verb.pos} name={verb.name} key={i} />
+                      } else return ""
+                    })}
+                </SortableContext>
 
-              </DndProvider>
+              </DndContext>
             </Stack>
 
             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>
             </Box>
-            {!showScore && <ProgressBar  paused={paused} nextStep={nextStep} />}
+            {!showScore && <ProgressBar paused={paused} nextStep={nextStep} />}
             <Score open={showScore} handleClose={handleClose} />
           </> :
           <Typography> No Data </Typography>

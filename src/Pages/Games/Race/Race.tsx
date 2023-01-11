@@ -210,7 +210,7 @@ const Race = () => {
               {VerbToText[data[ongoingGameInfo.currentStep - 1].visibleTenses[2] as keyof typeof VerbToText]}
             </Button>
           </Stack>
-          {!showScore && <ProgressBar nextStep={nextStep} />}
+          {(!showScore && ongoingGameInfo.maxTime !== 0 ) && <ProgressBar nextStep={nextStep} />}
           <Score open={showScore} handleClose={handleClose} />
         </> :
         <>

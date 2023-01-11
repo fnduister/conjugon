@@ -39,7 +39,8 @@ const DropArea = ({item, children, itemType,truth, id, moveItem, showResult}: Pr
       alignItems: 'center',
       background: isOver ? 'cyan' : 'white'
     }}>
-      <DropItem showResult={showResult} truth={truth} itemType={itemType} name={item.name} id={item.pos} />
+      hello
+      {/* <DropItem showResult={showResult} truth={truth} itemType={itemType} name={item.name} id={item.pos} /> */}
     </Box>
   )
 }

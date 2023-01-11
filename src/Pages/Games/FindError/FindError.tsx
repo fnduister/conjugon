@@ -218,7 +218,7 @@ const FindError = () => {
               {data[ongoingGameInfo.currentStep - 1].visibleWords[3]}
             </Button>
           </Stack>
-          {!showScore && <ProgressBar nextStep={nextStep} />}
+          {(!showScore && ongoingGameInfo.maxTime !== 0 ) && <ProgressBar nextStep={nextStep} />}
           <Score open={showScore} handleClose={handleClose} />
         </> :
         <>
