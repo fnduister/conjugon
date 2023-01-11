@@ -209,13 +209,13 @@ const MoveMe = () => {
                 sensors={sensors}
               >
                 <SortableContext
-                  items={data[ongoingGameInfo.currentStep - 1].stepTable.map((ele) => ele.pos)}
+                  items={data[ongoingGameInfo.currentStep - 1].stepTable.map((ele) => ele.pos.toString())}
                   strategy={rectSortingStrategy}
                 >
                   {data[ongoingGameInfo.currentStep - 1].stepTable.map(
                     (verb, i) => {
                       if (data[ongoingGameInfo.currentStep - 1].visiblePronouns[i] !== '') {
-                        return <DropItem id={verb.pos} name={verb.name} key={i} />
+                        return <DropItem id={verb.pos.toString()} name={verb.name} key={i} />
                       } else return ""
                     })}
                 </SortableContext>

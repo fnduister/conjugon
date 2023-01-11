@@ -5,7 +5,7 @@ import { CSS } from '@dnd-kit/utilities'
 import { useDrag } from 'react-dnd'
 
 interface Props {
-  id: number;
+  id: string;
   name: string;
   // itemType: string;
   // showResult: boolean
@@ -50,7 +50,6 @@ export const DropItem = ({ id, name }: Props) => {
       alignItems='center'
       justifyContent='space-between'
       style={{touchAction: 'none'}}
-
     >
       <Typography>
         je
