@@ -13,6 +13,11 @@ export const conjugationTables = atom({
   default: conjugation as Verb[]
 })
 
+export const currentdnd = atom({
+  key: "dnd",
+  default: "moveme"
+})
+
 export const tensesState = selector<string[]>({
   key: 'tenses',
   get: ({ get }) => {

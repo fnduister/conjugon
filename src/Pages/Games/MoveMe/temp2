@@ -7,11 +7,10 @@ import {
   DragEndEvent,
   TouchSensor,
   useSensor,
-  useSensors,
-  useDroppable,
-  closestCorners
+  useSensors
 } from '@dnd-kit/core'
 import { DropItem } from './DropItem';
+import DropArea from './DropArea';
 import { MoveMeGameInfo, VerbProps } from './../../../Data/interfaces';
 import { Box, Button, Container, Stack, Typography } from '@mui/material'
 import { config, useSpring } from '@react-spring/web'
@@ -36,15 +35,12 @@ import positifEndgame from '../../../Assets/interactif/positifEndgame_mixdown.mp
 
 import {
   arrayMove,
-
   rectSortingStrategy,
-
   SortableContext,
   sortableKeyboardCoordinates,
   verticalListSortingStrategy
 } from '@dnd-kit/sortable';
 import { SortableItem } from './SortableItem';
-import Dragable from './Dragable';
 
 
 interface Item {
@@ -60,6 +56,7 @@ interface RealItem {
 
 const MoveMe = () => {
   const [data, setData] = useState<MoveMeGameInfo[]>([])
+
   const defaultCorrection: boolean[] = [false, false, false, false, false, false]
   const [correction, setCorrection] = useState<boolean[]>(defaultCorrection)
   const currentVerbs = useRecoilValue(currentVerbsState)
@@ -76,16 +73,17 @@ const MoveMe = () => {
   const [paused, setPaused] = useState(false)
   const mouseSensor = useSensor(MouseSensor); // Initialize mouse sensor
   const touchSensor = useSensor(TouchSensor); // Initialize touch sensor
-
+  const [items, setItems] = useState<RealItem[]>([
+    { some: "nothing", realValue: [{ id: 1, value: 'one' }, { id: 2, value: 'two' }, { id: 3, value: 'three' }] },
+    { some: "nothing", realValue: [{ id: 1, value: 'one' }, { id: 2, value: 'two' }, { id: 3, value: 'three' }] },
+    { some: "nothing", realValue: [{ id: 1, value: 'one' }, { id: 2, value: 'two' }, { id: 3, value: 'three' }] }
+  ])
   const sensors = useSensors(
-    mouseSensor,
+    useSensor(PointerSensor),
     useSensor(KeyboardSensor, {
       coordinateGetter: sortableKeyboardCoordinates,
     })
   );
-  const { setNodeRef } = useDroppable({
-    id: 1,
-  });
 
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
@@ -96,21 +94,36 @@ const MoveMe = () => {
         setData(old => {
           return old.map((info, i) => {
             if (i === ongoingGameInfo.currentStep - 1) {
-              const refTable = info.stepTable.map(e => e.pos.toString())
+              console.log('🚀 ~ returnold.map ~ info.stepTable', info.stepTable);
+              const refTable = info.stepTable.map(e => {
+                return e.pos.toString();
+              });
               const old: string = active.id as string
               const newi: string = over.id as string
               const oldIndex = refTable.indexOf(old);
               const newIndex = refTable.indexOf(newi);
               const newTable = arrayMove(info.stepTable, oldIndex, newIndex);
-              // const pronouns = arrayMove(info.visiblePronouns, oldIndex, newIndex);
-               
               console.log('🚀 ~ returnold.map ~ newTable', newTable);
-              return { ...info, stepTable: newTable}
+              return { ...info, stepTable: newTable }
             } else return info
           })
         })
       }
     }
+    // let modifiedWords = data[ongoingGameInfo.currentStep - 1].stepTable.map((ele, i) => {
+    //   if (i === newPos) {
+    //     return { pos: ele.pos, name: item.name }
+    //   } else if (i === item.pos) {
+    //     return { pos: item.pos, name: data[ongoingGameInfo.currentStep - 1].stepTable[newPos].name }
+    //   }
+    //   return ele
+    // });
+    // const lmodifiedWords = data.map((ele, i) => {
+    //   if (ongoingGameInfo.currentStep - 1 === i) {
+    //     return { ...ele, stepTable: modifiedWords }
+    //   } return ele
+    // })
+    // setData(lmodifiedWords)
   }
 
   useEffect(() => {
@@ -213,6 +226,7 @@ const MoveMe = () => {
       setPaused(false)
       setProgress(0)
     }, 2000);
+    // setCurrentStep(prev => prev + 1)
   }
 
   const showScoreOverlay = () => {
@@ -226,7 +240,25 @@ const MoveMe = () => {
     setReset(false)
   }
 
+  function handleDragEnd2(event: DragEndEvent) {
+    const { active, over } = event;
 
+    if (over) {
+
+      if (active.id !== over.id) {
+        setItems((items) => {
+          return items.map((itemj, j) => {
+            if (j === 0) {
+              const oldIndex = itemj.realValue.map(ele => ele.id).indexOf(active.id as number);
+              const newIndex = itemj.realValue.map(ele => ele.id).indexOf(over.id as number);
+
+              return { ...itemj, realValue: arrayMove(itemj.realValue, oldIndex, newIndex) }
+            } else return itemj
+          })
+        });
+      }
+    }
+  }
 
   // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   return (
@@ -243,26 +275,17 @@ const MoveMe = () => {
             >
               <SortableContext
                 items={data[ongoingGameInfo.currentStep - 1].stepTable.map((ele) => ele.pos.toString())}
-                strategy={verticalListSortingStrategy}
+                strategy={rectSortingStrategy}
               >
-                {
-                  data[ongoingGameInfo.currentStep - 1].stepTable.map(
-                    (ele, i) => <SortableItem
-                      pronoun={data[ongoingGameInfo.currentStep - 1].visiblePronouns[i]}
-                      item={ele}
-                      showResult={showResult}
-                      correction={data[ongoingGameInfo.currentStep - 1].correction[i]}
-                      key={ele.pos}
-                    />
-                  )
-                }
+                {data[ongoingGameInfo.currentStep - 1].stepTable.map((item, index) => <SortableItem key={index} item={item} />)}
               </SortableContext>
 
             </DndContext>
+
             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>
             </Box>
-            {(!showScore && ongoingGameInfo.maxTime !== 0 )  && <ProgressBar paused={paused} nextStep={nextStep} />}
+            {!showScore && <ProgressBar paused={paused} nextStep={nextStep} />}
             <Score open={showScore} handleClose={handleClose} />
           </> :
           <Typography> No Data </Typography>

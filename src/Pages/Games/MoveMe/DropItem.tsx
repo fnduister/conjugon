@@ -2,17 +2,13 @@ import { useSortable } from '@dnd-kit/sortable'
 import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { CSS } from '@dnd-kit/utilities'
-import { useDrag } from 'react-dnd'
+import { VerbProps } from '../../../Data/interfaces'
 
 interface Props {
-  id: string;
-  name: string;
-  // itemType: string;
-  // showResult: boolean
-  // truth: string
+  item: VerbProps
 }
 
-export const DropItem = ({ id, name }: Props) => {
+export const DropItem = ({ item }: Props) => {
   //   const [{ isDragging }, dragRef] = useDrag({
   //       type: itemType,
   //       item: { pos:id, name },
@@ -35,7 +31,7 @@ export const DropItem = ({ id, name }: Props) => {
     setNodeRef,
     transform,
     transition
-  } = useSortable({ id })
+  } = useSortable({ id: item.pos.toString() })
 
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -44,12 +40,11 @@ export const DropItem = ({ id, name }: Props) => {
   }
 
   return (
-    <Stack
-      direction={{ xs: 'column', sm: 'row' }}
-      sx={{ m: 2, flexWrap: 'wrap', maxWidth: 'md' }}
-      alignItems='center'
-      justifyContent='space-between'
-      style={{touchAction: 'none'}}
+    <div
+      ref={setNodeRef}
+      style={{ ...style, touchAction: 'none' }}
+      {...attributes}
+      {...listeners}
     >
       <Typography>
         je
@@ -63,17 +58,14 @@ export const DropItem = ({ id, name }: Props) => {
           background: 'white',
           height: 60,
         }}
-        ref={setNodeRef}
-        style={style}
-        {...attributes}
-        {...listeners}
+
       >
-        {name.split(" ")[0]}
+        {item.name.split(" ")[0]}
       </Box>
       <Typography>
-        {name.split(" ")[1]}
+        {item.name.split(" ")[1]}
       </Typography>
-    </Stack>
+    </div>
 
   )
 }

@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "63c1bea2750ba1001dc9d281"
+  },
+  "role": "TEACHER",
+  "courses": [
+    {
+      "$oid": "61822f5adb3db400572083a3"
+    }
+  ],
+  "answers": [],
+  "lastname": "Benabbou",
+  "email": "younes.benabbou@polymtl.ca",
+  "matricule": 2061595,
+  "firstname": "Younes",
+  "password": "$2a$10$4ehSGPXEg8Q4UlqLPLzGKOtkFcXw.1rBtCEqBVHNyfiUIa805.ZtW",
+  "lastConnection": {
+    "$date": {
+      "$numberLong": "1673641634300"
+    }
+  },
+  "__v": 0
+},
