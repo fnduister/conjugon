@@ -79,7 +79,7 @@ export const positifSpriteMap: SpriteMap = {
 
 export const positifKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7', 'ss8', 'ss9', 'ss10', 'ss11', 'ss12']
 
-export const negatifSpriteMap:SpriteMap = {
+export const negatifSpriteMap: SpriteMap = {
   'ss1': [0, 1500],
   'ss2': [1500, 1500],
   'ss7': [3000, 1500],
@@ -93,7 +93,7 @@ export const negatifKeys = ['ss1', 'ss2', 'ss3', 'ss4', 'ss5', 'ss6', 'ss7']
 
 export const voyelles = ['e', 'o', 'y', 'a', 'i', 'u']
 
-export const d_game =   {
+export const d_game = {
   img: error,
   title: "Trouver l'erreur",
   difficulty: 'dure',
@@ -156,16 +156,16 @@ export const d_pronouns = [
   ['Il', 'mael', 'adam', 'raf', 'jade'],
   ['Nous', 'Alexandre et moi', 'Jade et moi'],
   ['Vous', 'Fabrice et toi', 'Celine et toi', 'Baka billie et toi'],
-  ['Ils/elles','Raf et Jade', 'Adam et Mael']
+  ['Ils/elles', 'Raf et Jade', 'Adam et Mael']
 ]
 
 export const speeds = [
-  {name: "aucun", value: 0},
-  {name: "très lent", value: 500},
-  {name: "lent", value: 275},
-  {name: "normal", value: 175},
-  {name: "rapide", value: 45},
-  {name: "très rapide", value: 10}
+  { name: "aucun", value: 0 },
+  { name: "très lent", value: 500 },
+  { name: "lent", value: 275 },
+  { name: "normal", value: 175 },
+  { name: "rapide", value: 45 },
+  { name: "très rapide", value: 10 }
 ]
 
 export const d_ongoingGame = {
@@ -177,13 +177,18 @@ export const d_ongoingGame = {
   maxScore: 1
 }
 
+export const Colors = {
+  green: '#caffbf',
+  red: '#ffadad'
+}
+
 export const specialTenses = [
   "infinitif", "auxiliaire", "participePasse", "participePresent",
-"imperatif", "imperatifPasse", "formePronominale", "formeNonPronominale"]
+  "imperatif", "imperatifPasse", "formePronominale", "formeNonPronominale"]
 
 export const d_customTenseGroups = [
   { title: "facile", data: ["present", "passeSimple"] },
-{ title: "trop dure", data: ["plusQueParfait", "futurAnterieur"] }
+  { title: "trop dure", data: ["plusQueParfait", "futurAnterieur"] }
 ]
 
 export const d_presetTenseGroups = [

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Typography from '@mui/material/Typography';
-import { Divider, Stack, Button, FormControl, FormHelperText, InputLabel, MenuItem, Select, SelectChangeEvent, Box } from '@mui/material';
+import { Divider, Stack, Button, FormControl, FormHelperText, InputLabel, MenuItem, Select, SelectChangeEvent, Box, IconButton, useMediaQuery, TextField } from '@mui/material';
 import Container from '@mui/material/Container';
 import InputChip from './../../Components/InputChip/InputChip';
 import ListChip from './../../Components/ListChip/ListChip';
@@ -10,16 +10,19 @@ import { currentCustomTenseGroupsState, currentCustomVerbGroupsState, currentGam
 import { speeds, specialTenses } from '../../Data/defaults';
 import dommage from '../../Assets/audio/adam_dommage.mp3';
 import useSound from 'use-sound';
+import { Add, PhotoCamera } from '@mui/icons-material';
 
 const Pregame = () => {
-  const customVerbGroups = useRecoilValue(currentCustomVerbGroupsState)
+  const [currentCustomVerbGroups, setCurrentCustomVerbGroups] = useRecoilState(currentCustomVerbGroupsState)
   const presetVerbGroups = useRecoilValue(currentPresetVerbGroupsState)
   const presetTenseGroups = useRecoilValue(currentPresetTenseGroupsState)
-  const currentCustomTenseGroups = useRecoilValue(currentCustomTenseGroupsState)
+  const [currentCustomTenseGroups, setCurrentCustomTenseGroups] = useRecoilState(currentCustomTenseGroupsState)
   const [currentVerbs, setCurrentVerbs] = useRecoilState(currentVerbsState)
   const [currentTenses, setCurrentTenses] = useRecoilState(currentTensesState)
   const currentGame = useRecoilValue(currentGameState)
   const [ongoingGameInfo, setOngoingGameInfo] = useRecoilState(ongoingGameState)
+  const [addTenseMode, setAddTenseMode] = useState(false)
+  const [addVerbMode, setAddVerbMode] = useState(false)
   useEffect(() => {
     if (![5, 10, 15].includes(ongoingGameInfo.maxStep)) {
       setOngoingGameInfo(prev => ({ ...prev, maxStep: 5 }))
@@ -35,6 +38,14 @@ const Pregame = () => {
 
   const handleDeleteVerb = (data: string) => {
     setCurrentVerbs(verbs => verbs.filter(verb => verb !== data))
+  }
+
+  const handleDeleteVerbGroup = (data: string) => {
+    setCurrentCustomVerbGroups(oldGroups => oldGroups.filter(group => group.title !== data))
+  }
+
+  const handleDeleteTenseGroup = (data: string) => {
+    setCurrentCustomTenseGroups(oldGroups => oldGroups.filter(group => group.title !== data))
   }
 
   const handleChangeTense = (data: string[]) => {
@@ -81,6 +92,18 @@ const Pregame = () => {
     return (currentGame.url !== "race") ? tenses.filter(tense => !specialTenses.includes(tense)) : tenses
   }
 
+  const isXs = useMediaQuery("(max-width:600px)");
+  const handleAddGroup = (groupType: string) => {
+    if (groupType === 'verb') {
+    } else {
+      setAddTenseMode(prev => !prev)
+      if (!addTenseMode) {
+      }
+
+    }
+  }
+  const over = { justifyContent: 'center', display: "flex", mb: 0, ml: 0 }
+  const up = { justifyContent: 'center', display: "flex", mb: 3, ml: 3 }
   return (
     <>
       <Typography sx={{ m: 0, mb: 2, ml: 3, fontWeight: 'bold' }} variant="h4">{currentGame.title}</Typography>
@@ -92,14 +115,40 @@ const Pregame = () => {
         <Container>
           <InputChip selectList={verbs} changeFunc={handleChangeVerb} placeholder='Choisir les verbes' deleteFunc={handleDeleteVerb} currentList={currentVerbs} />
           <Typography variant="body1">Sélectionne un groupe custom</Typography>
-          <ListChip chipData={customVerbGroups} selectFunc={handleSelectVerb} />
+          <ListChip withDelete chipData={currentCustomVerbGroups} deleteGroup={handleDeleteVerbGroup} selectFunc={handleSelectVerb} />
           <Typography variant="body1">Sélectionne un groupe prédéfini</Typography>
           <ListChip chipData={presetVerbGroups} selectFunc={handleSelectVerb} />
         </Container>
         <Container>
           <InputChip isTense selectList={getTenses()} changeFunc={handleChangeTense} placeholder='Choisir le temps' deleteFunc={handleDeleteTense} currentList={currentTenses} />
           <Typography variant="body1">Sélectionne un groupe custom</Typography>
-          <ListChip isTense chipData={currentCustomTenseGroups} selectFunc={handleSelectTense} />
+          <Stack
+            direction={{ sx: "column", md: "row" }}
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            {!addTenseMode ?
+              <Box sx={{ display: "flex", flexGrow: 8, width: "100%" }}>
+                <ListChip withDelete deleteGroup={handleDeleteTenseGroup} isTense chipData={currentCustomTenseGroups} selectFunc={handleSelectTense} />
+              </Box> :
+
+              <TextField id="filled-basic" label="Filled" variant="filled" />
+            }
+
+            <Box width={{ xs: "100%", md: "120px" }}
+              height="40px"
+              sx={{ justifyContent: 'center', display: "flex", mb: 3, ml: { md: 3, xs: 0 } }}
+            >
+              <Button variant="contained"
+                sx={{ width: "100%", height: "100%" }}
+                color="warning"
+                onClick={() => handleAddGroup("tense")}
+                startIcon={<Add />}
+              >
+                Ajouter
+              </Button>
+            </Box>
+          </Stack>
           <Typography variant="body1">Sélectionne un groupe prédéfini</Typography>
           <ListChip isTense chipData={presetTenseGroups} selectFunc={handleSelectTense} />
         </Container>

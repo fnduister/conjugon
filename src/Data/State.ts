@@ -10,11 +10,11 @@ export const games = atom({
 
 export const conjugationTables = atom({
   key: 'conjugationTables',
-  default: conjugation as Verb[]
+  default: conjugation as unknown as Verb[]
 })
 
 export const currentdnd = atom({
-  key: "dnd",
+  key: "dnd", 
   default: "moveme"
 })
 

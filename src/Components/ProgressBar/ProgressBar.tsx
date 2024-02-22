@@ -37,7 +37,7 @@ export default function LinearWithValueLabel({ nextStep, paused }: Props) {
         })
       }
     }, Math.floor(ongoingGameInfo.maxTime));
-    if (progress >= 100) { nextStep() }
+    if (progress >= 100 && !paused) { nextStep() }
     return () => {
       clearInterval(timer);
     };

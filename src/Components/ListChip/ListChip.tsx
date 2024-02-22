@@ -7,14 +7,16 @@ import { GroupInfo } from '../../Data/interfaces';
 interface Props {
   chipData: GroupInfo[];
   selectFunc: (data: string[], selected: boolean) => void
-  isTense?: boolean
+  isTense?: boolean;
+  withDelete?: boolean;
+  deleteGroup?: (data: string) => void
 }
 
 const ListItem = styled('li')(({ theme }) => ({
   margin: theme.spacing(0.5),
 }));
 
-const ListChip = ({ chipData, selectFunc, isTense }: Props) => {
+const ListChip = ({ withDelete, deleteGroup, chipData, selectFunc, isTense }: Props) => {
 
   return (
     <Paper
@@ -25,14 +27,24 @@ const ListChip = ({ chipData, selectFunc, isTense }: Props) => {
         flexWrap: 'wrap',
         p: 0.5,
         m: 0,
-        mb: 3
+        mb: 3,
+        width: "100%"
       }}
       component="ul"
     >
       {chipData.map((data, key) => {
         return (
           <ListItem key={key} >
-            <ItemChip isTense={isTense} selectFunc={selectFunc} data={data.title} select hover popperData={data.data} />
+            <ItemChip
+              deleteFunc={deleteGroup}
+              withDelete={withDelete}
+              isTense={isTense}
+              selectFunc={selectFunc}
+              data={data.title}
+              select
+              hover
+              popperData={data.data}
+            />
           </ListItem>
         );
       })}

@@ -79,19 +79,17 @@ const MoveMe = () => {
 
   const sensors = useSensors(
     mouseSensor,
+    touchSensor,
     useSensor(KeyboardSensor, {
       coordinateGetter: sortableKeyboardCoordinates,
     })
   );
-  const { setNodeRef } = useDroppable({
-    id: 1,
-  });
 
   const handleDragEnd = (event: DragEndEvent) => {
     const { active, over } = event;
     console.log('🚀 ~ handleDragEnd ~ active', active);
     console.log('🚀 ~ handleDragEnd ~ over', over);
-    if (over) {
+    if (over && !showResult) {
       if (active.id !== over.id) {
         setData(old => {
           return old.map((info, i) => {
@@ -103,9 +101,9 @@ const MoveMe = () => {
               const newIndex = refTable.indexOf(newi);
               const newTable = arrayMove(info.stepTable, oldIndex, newIndex);
               // const pronouns = arrayMove(info.visiblePronouns, oldIndex, newIndex);
-               
+
               console.log('🚀 ~ returnold.map ~ newTable', newTable);
-              return { ...info, stepTable: newTable}
+              return { ...info, stepTable: newTable }
             } else return info
           })
         })
@@ -121,8 +119,8 @@ const MoveMe = () => {
     nextStep()
   };
 
-
   const resetGame = () => {
+    setProgress(0)
     setOngoingGameInfo(prev => ({
       ...prev, currentStep: 1, score: 0
     }))
@@ -196,6 +194,7 @@ const MoveMe = () => {
   }
 
   const nextStep = (guess?: string) => {
+    console.log("calling next step")
     updateHeader('step')
     getCorrection()
     setPaused(true)
@@ -208,7 +207,9 @@ const MoveMe = () => {
       if (ongoingGameInfo.currentStep >= ongoingGameInfo.maxStep) {
         setTimeout(() => { showScoreOverlay() }, 1500);
       } else {
-        setOngoingGameInfo(prev => ({ ...prev, currentStep: prev.currentStep + 1 }))
+        setTimeout(() => {
+          setOngoingGameInfo(prev => ({ ...prev, currentStep: prev.currentStep + 1 }))
+        }, 200)
       }
       setPaused(false)
       setProgress(0)
@@ -226,8 +227,6 @@ const MoveMe = () => {
     setReset(false)
   }
 
-
-
   // const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   return (
     <>
@@ -235,7 +234,6 @@ const MoveMe = () => {
         data.length > 0 ?
           <>
             <GameHeader update={headerData.update} target={headerData.target} />
-
             <DndContext
               collisionDetection={closestCenter}
               onDragEnd={handleDragEnd}
@@ -262,7 +260,7 @@ const MoveMe = () => {
             <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
               <Button variant='contained' sx={{ width: 100 }} color='secondary' onClick={handleClick}>Vérifier</Button>
             </Box>
-            {(!showScore && ongoingGameInfo.maxTime !== 0 )  && <ProgressBar paused={paused} nextStep={nextStep} />}
+            {(!showScore && ongoingGameInfo.maxTime !== 0) && <ProgressBar paused={paused} nextStep={nextStep} />}
             <Score open={showScore} handleClose={handleClose} />
           </> :
           <Typography> No Data </Typography>

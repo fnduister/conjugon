@@ -9,7 +9,8 @@ import {
   negatifEndgameSpriteMap,
   negatifEndgameKeys,
   positifEndgameSpriteMap,
-  positifEndgameKeys
+  positifEndgameKeys,
+  Colors
 } from '../../../Data/defaults'
 import { CompleteGameInfo, UpdateHeader, Verb } from '../../../Data/interfaces'
 import { currentVerbsState, conjugationTables, currentTensesState, ongoingGameState, timerState } from '../../../Data/State'
@@ -186,7 +187,7 @@ const Complete = () => {
                 return <Input
                   value={correction[pos].value}
                   onChange={(e: any) => handleValueChange(e, pos)}
-                  correction={correction[pos].check ? '#caffbf' : '#ffadad'}
+                  correction={correction[pos].check ? Colors.green : Colors.red}
                   showresult={showResult}
                   id="filled-basic"
                   label={pronoun}
