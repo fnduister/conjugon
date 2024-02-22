@@ -12,6 +12,8 @@ import FindError from './Pages/Games/FindError/FindError';
 import Complete from './Pages/Games/Complete/Complete';
 import ErrorBoundary from './Components/ErrorBoundary/ErrorBoundary';
 import MoveMe from './Pages/Games/MoveMe/MoveMe';
+import AddVerbPage from './Pages/AddVerb/AddVerbPage';
+import NotFoundPage from './Pages/NotFound/NotFoundPage';
 
 
 export const router = createBrowserRouter([
@@ -32,6 +34,14 @@ export const router = createBrowserRouter([
           <Pregame />
         </ErrorBoundary>,
         handle: { crumb: { name: "Pregame", path: "/pregame" } },
+      },
+      {
+        path: "/add-verb",
+        element: <ErrorBoundary>
+
+          <AddVerbPage />
+        </ErrorBoundary>,
+        handle: { crumb: { name: "AddVerb", path: "/add-verb" } },
       },
       {
         path: "/games",
@@ -80,6 +90,11 @@ export const router = createBrowserRouter([
         handle: { crumb: { name: "Account", path: "/account" } },
       },
     ]
+  },
+  {
+    path: "*",
+    element: < NotFoundPage />,
+    handle: { crumb: { name: "Pregame", path: "/pregame" } },
   },
 
 ]);

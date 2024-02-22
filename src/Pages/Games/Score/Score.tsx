@@ -1,7 +1,7 @@
-import { Modal, Box, Typography, Container, Button, Avatar } from '@mui/material';
+import { Modal, Box, Typography, Container, Button, Avatar, Stack } from '@mui/material';
 import React, { MouseEventHandler } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilValue } from 'recoil';
 import { ongoingGameState } from '../../../Data/State';
 
 const style = {
@@ -13,7 +13,8 @@ const style = {
     justifyContent: 'center',
     alignItem: 'center',
     flexDirection: 'column',
-    width: 400,
+    width: 500,
+    maxWidth: '80vw',
     background: "#1a1a1a",
     border: 'none',
     boxShadow: 24,
@@ -27,7 +28,7 @@ interface Props {
 }
 
 const Score = ({ open, handleClose }: Props) => {
-    const [ongoingGame, setOngoingGame] = useRecoilState(ongoingGameState)
+    const ongoingGame = useRecoilValue(ongoingGameState)
     const navigateTo = useNavigate()
 
     const closing = () => {
@@ -66,10 +67,10 @@ const Score = ({ open, handleClose }: Props) => {
                         <Typography variant="body1">%</Typography>
                     </Box>
                 </Avatar>
-                <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button variant='contained' sx={{ width: 200, m: 1 }} onClick={closing}>Recommencer</Button>
-                    <Button variant='contained' sx={{ width: 200, m: 1 }} onClick={handleQuit}>Sortir</Button>
-                </Container>
+                <Stack sx={{ display: 'flex' }} direction={{md: 'row', xs: 'column'}} alignItems='center' justifyContent='center'>
+                    <Button variant='contained' sx={{ p: 1, width: '55%', m: 1 }} onClick={closing}>Recommencer</Button>
+                    <Button variant='contained' sx={{ p: 1, width: '55%', m: 1 }} onClick={handleQuit}>Sortir</Button>
+                </Stack>
             </Box>
         </Modal >
     )

@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import theme from './theme'
 import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider } from '@mui/material/styles';
+import { responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import { router } from './Routes';
 import { RouterProvider } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
@@ -12,8 +12,10 @@ import { RecoilRoot } from 'recoil';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const responsiveTheme = responsiveFontSizes(theme)
 root.render(
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={responsiveTheme}>
       <CssBaseline />
       <RecoilRoot>
         <RouterProvider router={router} />
